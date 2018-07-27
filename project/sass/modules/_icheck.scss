@@ -1,0 +1,46 @@
+/* iCheck plugin Minimal skin, red
+----------------------------------- */
+.icheckbox_minimal-red,
+.iradio_minimal-red {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-red {
+    @extend .icons-checkbox-off;
+}
+.icheckbox_minimal-red.hover {
+    @extend .icons-checkbox-hover;
+    @include hoverOpacity(.9, .777s);
+}
+.icheckbox_minimal-red.checked {
+    @extend .icons-checkbox-on;
+}
+.icheckbox_minimal-red.disabled {
+    // background-position: -60px 0;
+    cursor: default;
+}
+.icheckbox_minimal-red.checked.disabled {
+}
+
+.iradio_minimal-red {
+    @extend .icons-radio-off;
+}
+.iradio_minimal-red.hover {
+    @extend .icons-radio-on;
+    @include hoverOpacity(.6, .777s);
+}
+.iradio_minimal-red.checked {
+    @extend .icons-radio-on;
+}
+.iradio_minimal-red.disabled {
+    cursor: default;
+}
+.iradio_minimal-red.checked.disabled {
+    
+}
+

@@ -1,0 +1,15 @@
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}
+
+.search-page .form-control
+{
+	width: 300px;
+	float: left;
+	margin-right:10px;
+}

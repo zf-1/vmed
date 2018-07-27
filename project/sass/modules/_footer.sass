@@ -1,0 +1,183 @@
+.footer
+	.level-0
+		background: $blue
+		.container 
+			padding-top: 2em
+			padding-bottom: 2em
+			.cell-10
+				padding-bottom: 2em
+				+cell-reset
+				>p 
+					text-align: center
+					font-size: 15px
+					line-height: 1.5em
+					color: #FFF
+			.form 
+				+grid(8)
+				+grid-8-fix
+				margin: 0 auto
+				
+				.group 
+					.cell 
+						&:nth-child(1) 
+							width: 40%
+							padding-right: 1em
+						&:nth-child(2) 
+							width: 40%
+							padding-right: 1em
+						&:nth-child(3) 
+							width: 20%
+						@media (max-width: 584px) 
+							padding-right: 0 !important
+							width: 100% !important
+						input 
+							margin-top: 6px	
+							@media (max-width: $site-width) 	
+								margin-top: 0
+								margin-bottom: 1em				
+	.level-1
+		background: #333
+		.container 
+			+ullireset
+			padding-top: 2rem
+			padding-bottom: 0rem
+			@media (max-width: $site-width) 
+				padding-top: 1em
+			.adapt-phone
+				display: none
+				@media (max-width: $site-width) 
+					display: block
+					margin-bottom: 1em
+				>div 
+					text-align: center
+					&:nth-child(1) 
+						padding-top: 1rem
+						a 
+							font-weight: 400
+							font-size: 32px
+							color: #FFF
+							// +proxima-cold-bold
+					&:nth-child(2) 
+						padding-top: .5rem
+						a 
+							color: #FFF
+							font-size: 16px
+							+dib
+							i 
+								margin-right: .5em
+			.menu-place 
+				border-bottom: 1px solid #484848
+				padding-bottom: 2rem
+				margin-bottom: 1rem
+				@media (max-width: $site-width) 
+					border-bottom: 0
+					padding-bottom: 0
+					margin-bottom: 0em
+				.phone
+					@media (max-width: $site-width) 
+						display: none
+					>div 
+						text-align: right
+						&:nth-child(1) 
+							padding-top: 1rem
+							a 
+								font-weight: 400
+								font-size: 32px
+								color: #FFF
+								// +proxima-cold-bold
+						&:nth-child(2) 
+							padding-top: .5rem
+							a 
+								color: #FFF
+								font-size: 16px
+								+dib
+								i 
+									margin-right: .5em
+				.cell-2
+					@media (max-width: $site-width) 
+						+grid(3)
+					@media (max-width: 768px) 
+						+grid(6)
+					@media (max-width: 500px) 
+						width: 100%
+					ul 
+						@media (max-width: $site-width) 
+							margin-bottom: 1rem
+						li 
+							display: block
+							line-height: 1.5em 
+							a 
+								color: #CCC
+								&:hover 
+									color: #FFF
+							&:nth-child(1) 
+								a 
+									font-weight: 700
+									color: #FFF
+						&.strong 
+							a 
+								font-weight: 700
+								color: #FFF
+								&:hover
+									color: rgba(#FFF, .6)
+			.adress-place
+				padding-top: 1rem
+				padding-bottom: 1rem
+				@media (max-width: $site-width) 
+					display: none
+				.cell-3
+					&:nth-child(1) 
+						font-weight: 200
+						font-size: 22px
+						color: rgba(#FFF, .6)
+						+proxima-light
+						@media (max-width: $site-width) 
+							width: 100%
+							text-align: center
+							margin-bottom: .5em
+					&.adress 
+						color: rgba(#FFF, .6)
+						&:hover
+							color: rgba(#FFF, 1)
+						@media (max-width: $site-width) 
+							+grid(4)
+						div 
+							position: relative
+							&:nth-child(1) 
+								font-weight: 700
+								font-size: 16px
+								+before
+									position: absolute
+									left: -24px
+									top: 0
+									@extend .icons-point
+							&:nth-child(2) 
+								font-weight: 200
+								font-size: 14px
+								+proxima-light
+	.level-2 
+		background: #272727
+
+		.container 
+			padding-top: 1rem
+			padding-bottom: 1rem
+			.copy
+				+proxima-light
+				font-size: 12px
+				color: rgba(#FFF, .2)
+				+dib
+				a 
+					margin-right: 1em
+				span 
+					margin-top: 6px
+				@media (max-width: 700px) 
+					width: 100%
+					text-align: center
+			.info 
+				font-size: 18px
+				padding-top: 2px
+				+proxima-light
+				color: rgba(#FFF, .2)
+				@media (max-width: 700px) 
+					width: 100%
+					text-align: center

@@ -1,0 +1,595 @@
+%doctors-list-item-style
+	margin: 0 1em 
+	+transition(.3s)
+	padding-top: .5em
+	color: $text
+	display: block
+	&:hover
+		border-radius: 4px
+		+box-shadow(0 1px 12px 0 rgba(#00959B, .65))
+		.adress
+			background: #C6EDF2
+			color: $text
+		.profession
+			color: $text	
+		.name 
+			>b 
+				color: $blue						
+	.avatar 
+		width: 96px
+		height: 96px
+		border-radius: 108em
+		background-size: cover
+		background-position: center 
+		margin: 0 auto 1em
+	.profession
+		font-size: 12px
+		// font-size: 8px
+		line-height: 1em
+		color: #9A9A9A
+		min-height: 3rem
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: .5em
+	.name 
+		text-align: center
+		margin-bottom: .5em
+		b 
+			display: block 
+			font-size: 18px
+			+proxima-cold-bold
+		span 
+			display: block 
+			font-size: 14px
+	.adress
+		font-size: 14px
+		+proxima-light
+		color: #B3B3B3
+		text-align: center
+		position: relative
+		padding-top: .5em
+		padding-bottom: .5em
+		+dib
+		+before 
+			@extend .icons-point
+			display: inline-block
+			vertical-align: middle
+%tabs
+	+ullireset
+	text-align: center
+	ul 
+		display: inline-block
+		vertical-align: top 
+		font-size: 0
+		@media (max-width: 505px) 
+			border: 1px solid $blue
+			display: block
+		li 
+			// overflow: hidden
+			display: inline-block
+			vertical-align: top
+			font-size: 15px
+			padding: .5em 1em 
+			border-top: 1px solid $blue 
+			border-bottom: 1px solid $blue 
+			cursor: pointer
+			@media (max-width: 565px) 
+				font-size: 13px
+			@media (max-width: 505px) 
+				display: block 
+				font-size: 15px
+				border: 1px solid $blue
+			&:nth-child(1) 
+				border-radius: 1.5rem 0 0 1.5rem
+				border-left: 1px solid $blue 
+				@media (max-width: 505px) 
+					border-radius: 0
+					display: block 
+					border: 0	
+					border-bottom: 1px solid $blue
+			&:nth-child(2) 
+				border-left: 1px solid $blue 
+				border-right: 1px solid $blue 
+				@media (max-width: 505px) 
+					border: 0
+					border-bottom: 1px solid $blue
+			&:nth-child(3) 
+				border-right: 1px solid $blue 
+				border-radius: 0 1.5rem 1.5rem 0
+				@media (max-width: 505px) 
+					border: 0
+					border-radius: 0
+					display: block 	
+			&.active, &:hover
+				background: $blue
+				color: #FFF		
+%all-filter
+	background: #F5F5F5
+	// overflow: hidden
+	position: relative 
+	border-radius: 3em
+	margin-bottom: 1em
+	@media (max-width: 1022px) 
+		border-radius: 0
+	.group 
+		.cell 
+			// position: relative
+			// z-index: 99
+			padding: 1em
+			&.switcher-place
+				position: relative
+				z-index: 3
+			&:nth-child(1) 
+				+grid(6)
+				padding-right: 3em
+				@media (max-width: 768px) 
+					padding-right: 1em
+				@media (max-width: 586px) 
+					+grid(12)
+					padding-right: 1em
+					padding-bottom: 0rem
+			&:nth-child(2) 
+				+grid(4)
+				padding-left: 4.5em
+				z-index: 3
+				@media (max-width: 768px) 
+					+grid(3)
+				@media (max-width: 1022px) 
+					// +grid(6)
+					// padding-left: 4.5em
+					// padding-bottom: 0
+				@media (max-width: 586px) 
+					+grid(12)
+					padding-bottom: 0
+				+dib
+				.switcher
+					position: absolute
+					left: 1em
+					top: 1em
+					z-index: 6
+					@media (max-width: 1022px) 
+						left: 1em
+				span 
+					font-size: 15px
+					line-height: 1em
+					@media (max-width: 1022px) 
+						br 
+							display: none
+			&:nth-child(3) 
+				padding: 0em
+				+grid(2)
+				height: 62px
+				@media (max-width: 768px) 
+					+grid(3)
+					// +grid(6)
+					// padding: 1em
+					// text-align: right
+				@media (max-width: 1022px) 
+					padding: 1em
+					padding-bottom: 0
+				@media (max-width: 586px) 
+					+grid(12)
+				.button
+					border-radius: 0 3em 3em 0
+					color: #FFF
+					background: $red2
+					padding: 1em
+					cursor: pointer
+					line-height: 30px
+					@media (max-width: 1022px) 
+						line-height: 1rem
+						border-radius: 1em
+						text-align: center
+						padding: .5em 1.25em
+						display: inline-block
+						vertical-align: middle
+						+grid(12)
+						display: block 
+					+dib							
+					span 
+						line-height: 15px
+					&:hover
+						background: shade($red2, 12)
+
+			select 
+				margin-bottom: 0
+%actions-block-item-style
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	color: #FFF 
+	border-radius: 4px
+	overflow: hidden
+	position: relative
+	+before
+		position: absolute
+		left: 0 
+		top: 0
+		width: 100%
+		background: rgba($blue, .8)
+		height: 100%
+		z-index: 0
+		opacity: 0
+		+transition(.6s)
+	>div 
+		position: relative
+		z-index: 1
+	&:hover 
+		&:before 
+			opacity: 1 
+	a 
+		color: #FFF 
+	.level-0 
+		font-size: 12px
+		padding: 1rem
+		text-transform: uppercase
+	.level-1 
+		padding: 1rem
+		padding-top: 0
+		.name 
+			max-width: 500px
+			min-height: 6rem
+			@media (max-width: 600px) 
+				margin-bottom: .5rem
+			a 
+				font-size: 32px
+				font-weight: 700
+				line-height: 1em
+				@media (max-width: 600px) 
+					font-size: 24px
+				@media (max-width: 400px) 
+					font-size: 18px
+		.date 
+			font-size: 24px
+			line-height: 1em
+			font-weight: 700
+			position: absolute 
+			right: 1rem
+			top: 1rem
+			text-align: right 
+			max-width: 200px
+			@media (max-width: 768px) 
+				position: relative
+				right: inherit 
+				top: inherit 
+				text-align: left
+				max-width: 500px
+				font-size: 16px
+	.level-2
+		+after
+		padding: 1em
+		.points
+			float: right 
+			width: 70%
+			+after
+			@media (max-width: 600px) 
+				width: 100%
+				float: none 
+			.point 
+				position: relative
+				width: $h / 3
+				float: left 
+				padding-left: 2em
+				@media (max-width: 430px) 
+					width: 100%
+					margin-bottom: .5rem
+					&:last-child
+						margin-bottom: 0
+				+before
+					position: absolute
+					@extend .icons-point
+					top: 0
+					left: 0
+				span 
+					display: block 
+					&:nth-child(1) 
+						text-transform: uppercase
+		.more 
+			float: left 
+			width: 30%
+			padding-top: 1rem
+			@media (max-width: 600px) 
+				width: 100%
+				float: none 
+			a 
+				border-bottom: 1px dotted
+				font-size: 12px
+				text-transform: uppercase
+				line-height: 1em
+				&:hover 
+					border-bottom: 0
+%reviews-item-style
+	width: 100%
+	@media (max-width: $site-width) 
+		// width: 100%
+	.group 
+		display: block
+		margin: 1em auto 1em 
+		border-radius: 4px
+		overflow: hidden
+		margin-bottom: 1rem
+		background: #F0F0F0
+		// +box-shadow(0px 1px 18px 1px rgba(#000, .108))
+		border: 1px solid rgba(#000, .108)
+		display: table
+		.cell 
+			display: table-cell
+			padding: 1em
+			&:nth-child(1) 
+				width: ($h / 8) * 6
+				background: #FFF
+				@media (max-width: 684px) 
+					width: 100%
+					display: block 
+			&:nth-child(2) 
+				width: ($h / 8) * 2
+				background: #F0F0F0
+				color: $text
+				@media (max-width: 684px) 
+					width: 100%
+					display: block 
+				.section
+					margin-bottom: 1em
+					.sec-title
+						font-size: 12px
+						text-transform: uppercase
+						color: rgba(#000, .5)
+					.name 
+						font-size: 14px
+						color: $text
+						b 
+							+proxima-cold-bold	
+							font-size: 18px
+							display: block
+					&.client
+						.name 
+							padding-left: 50px
+							font-size: 12px
+							position: relative
+							b 
+								font-size: 14px
+								color: $blue
+							.avatar
+								border-radius: 108em
+								background-size: cover
+								background-position: center
+								position: absolute
+								left: 0
+								top: 1em
+								height: 40px
+								width: 40px
+								@media (max-width: 684px) 
+									top: 0
+				.all 
+					a 
+						font-size: 12px
+						line-height: 1em
+						border-bottom: 1px dotted
+						color: $blue
+			.date
+				font-size: 12px
+				color: #CDCDCD
+				text-transform: uppercase
+				margin-bottom: 1em
+			.tags 
+				margin-bottom: 1em
+				li 	
+					font-size: 12px
+					margin-right: 2px
+					padding: .5em .75em
+			.text 
+				font-size: 16px
+				line-height: 1.2em
+			.show-more 
+				a 
+					font-size: 12px
+					border-bottom: 1px dotted
+					line-height: 12px
+					color: #00B7F9
+%vac-list-item-style
+	border: 1px solid rgba(#000, .108)
+	+transition(.6s)
+	&:hover
+		border: 1px solid rgba($blue, 1)
+		.level-1, .level-4
+			a 
+				color: $blue !important
+	.level-0
+		padding: .5em 1em 0
+		span 
+			font-size: 12px
+			color: #9A9A9A
+			text-transform: uppercase
+	.level-1 
+		+after 
+		padding: .5em 1em
+		border-bottom: 1px solid #AEE6E6
+		.name
+			width: calc(100% - 230px)
+			float: left 
+			@media (max-width: 768px) 
+				width: 100%
+				margin-bottom: .5rem
+			a 
+				font-size: 20px
+				font-weight: 700
+				color: $text
+		.price 
+			width: 230px
+			float: left 
+			font-weight: 700
+			font-size: 24px
+			color: #2F2F2F
+			text-align: right 
+			@media (max-width: 768px) 
+				width: 100%
+				text-align: left
+			span 
+				line-height: 1em
+				&.fix 
+					display: inline-block 
+					width: 100px
+					@media (max-width: 768px) 
+						width: auto
+	.level-2
+		padding: 1em 1em .5em 
+	.level-3
+		padding: 0em 1em .5em 
+	.level-4
+		padding: 0em 1em .5em 
+		+show-more-style
+%big-list-block 
+	margin-top: 1em
+	+after
+	.alphabet
+		+grid(3)
+		+box-shadow(0 1px 12px 0 rgba(#7A8D8E, .45))
+		border-radius: 4px
+		overflow: hidden
+		float: left
+		@media (max-width: 950px) 
+			+grid(12)
+			margin-bottom: 1em
+			display: none
+		.search
+			background: #F5F5F5
+			position: relative
+			border-bottom: 1px solid #E6E6E6
+			padding-top: 6px
+			+before
+				position: absolute
+				left: .5em 
+				top: .5em
+				@extend .icons-price-search
+			input[type=text]
+				border-top: 0
+				background: none
+				border: none
+				color: #303030
+				font-size: 15px
+				padding-left: 2.5em
+				// padding-top: 6px
+				line-height: 17px
+				margin-bottom: 6px
+				+input-placeholder
+					font-size: 15px
+					color: #303030
+		.place
+			+ullireset
+			+after
+			.letters
+				width: 32px
+				float: left 
+				border-right: 1px solid #E6E6E6
+				padding-top: 4px
+				@media (max-width: 950px) 
+					width: 100%
+					border-bottom: 1px solid #E6E6E6
+					border-right: 0
+				@media (max-width: 568px) 
+					overflow-x: scroll
+				ul 
+					@media (max-width: 950px) 
+						min-width: 512px
+					+after
+					li 
+						text-align: center
+						display: block 
+						cursor: pointer
+						position: relative
+						padding-bottom: 4px
+						@media (max-width: 950px) 
+							float: left 
+							padding: .5em
+						span 
+							z-index: 1
+							position: relative
+						&.active 
+							span
+								color: #FFF 
+							+after
+								position: absolute
+								top: 0
+								left: 0
+								right: 0
+								margin: 0 auto
+								width: 1.25em
+								height: 1.25em
+								border-radius: 108em
+								background: #ED2F2F
+								z-index: 0
+								@media (max-width: 950px) 
+									top: .5em
+						&:hover
+							span 
+								color: tint($text, 24)
+			.list 
+				width: calc(100% - 32px)
+				float: left 
+				height: 479px
+				// overflow-y: scroll
+				@media (max-width: 950px) 
+					height: 120px
+					width: 100%
+				>ul 
+					>li 
+						padding: .5em
+						color: #9A9A9A
+						cursor: pointer
+						+transition(.6s)
+						padding-right: 3em
+						&:hover 
+							background: #ED2F2F
+							color: #FFF
+%big-tabs
+	+ullireset
+	text-align: center
+	margin-bottom: 1rem
+	ul 
+		display: inline-block
+		vertical-align: top 
+		font-size: 0
+		@media (max-width: 505px) 
+			border: 1px solid $blue
+			display: block
+		li 
+			// overflow: hidden
+			display: inline-block
+			vertical-align: top
+			font-size: 15px
+			padding: .5em 1em 
+			border-top: 1px solid $blue 
+			border-bottom: 1px solid $blue 
+			cursor: pointer
+			@media (max-width: 565px) 
+				font-size: 13px
+			@media (max-width: 505px) 
+				display: block 
+				font-size: 15px
+				border: 1px solid $blue
+			&:nth-child(1) 
+				border-radius: 1.5rem 0 0 1.5rem
+				border-left: 1px solid $blue 
+				@media (max-width: 505px) 
+					border-radius: 0
+					display: block 
+					border: 0	
+					border-bottom: 1px solid $blue
+			&:nth-child(2), &:nth-child(3) 
+				border-left: 1px solid $blue 
+				border-right: 1px solid $blue 
+				@media (max-width: 505px) 
+					border: 0
+					border-bottom: 1px solid $blue
+			&:nth-child(3) 
+				border-left: 0
+			&:nth-child(4) 
+				border-right: 1px solid $blue 
+				border-radius: 0 1.5rem 1.5rem 0
+				@media (max-width: 505px) 
+					border: 0
+					border-radius: 0
+					display: block 	
+			&.active, &:hover
+				background: $blue
+				color: #FFF	

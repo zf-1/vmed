@@ -1,0 +1,144 @@
+
+	.sect_name ul{
+		list-style: none;
+		display: none;
+		margin-left: 13px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.sect_name ul li{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 2px 144px 2px 0;
+		color: #848388;		
+		position: relative;
+	}
+	.show_el{
+		border-bottom: 1px solid #f2f2f2;
+	}
+	.prices{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.el_name>span{
+		max-width: 500px;
+		display: inline-block;
+	}
+	.prices span{
+		display: inline-block;
+	}
+	.prices span:first-child{
+		width: 60px;
+		color: #fd222a;
+	}
+	.prices span:last-child{
+		width: 65px;
+	}
+	.sect_name.show_el ul{
+		display: block;
+	}
+	#search_in{
+		width: 495px;
+		float: left;
+	}
+	.clinics{
+		clear: both;
+	}
+	#search_but{
+		display: inline-block;
+		background: #fb222b;
+		color: #fff;
+		text-decoration: none;
+		line-height: 34px;
+		border-radius: 4px;
+		padding: 0 24px;
+		margin-left: 22px;
+	}
+	.search_in_wrap{
+		margin-top: 10px;
+		margin-bottom: 18px;
+	}
+	.dsclmr{
+		font-size: 10px;
+	}
+	.dsclmr span{
+		color: #3e80a3;
+	}
+	.clinics span{
+		display: inline-block;
+	}
+	.clinics h4{
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: inline-block;
+		margin-right: 44px;
+	}
+	.clinics .clinic{
+		display: inline-block;
+		margin-left: 8px;		
+		background: #fe979b;
+		color: #fff;
+		text-decoration: none;
+		height: 34px;
+		border-radius: 4px;
+		padding: 2px 24px 0;
+		text-align: center;
+		font-size: 10px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+	.clinics .active_cl{
+		background: #fb222b;
+	}
+	.price_head{
+		margin-top: 18px;
+		line-height: 30px;
+		border-top: 2px solid #f2f2f2;
+		border-bottom: 2px solid #f2f2f2;
+		text-transform: uppercase;
+		color: #949494;
+		overflow: hidden;
+	}
+	.price_head span{
+		font-family: 'robotobold';
+		font-size: 11px;
+	}
+	.price_head span:first-child{
+		margin-left: 43px;
+	}
+	.price_head span:last-child{
+		float: right;
+		margin-right: 53px;
+	}
+	.pricelist{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.pricelist>li{
+		margin: 5px 0;
+	}
+	.price_toggle{
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		margin-right: 16px;
+		background: url(/upload/plus.png) no-repeat left top;
+		float: left;
+		line-height: 15px;
+		cursor: pointer;
+	}
+	.show_el .price_toggle{
+		background-position: left -16px;
+	}
+	.dsclmr_bott{
+		font-size: 12px;
+		font-family: 'robotoitalic';
+		color: #797380;
+		margin-left: 50px;	
+		margin-top: 20px;
+	}

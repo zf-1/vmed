@@ -1,0 +1,143 @@
+.darkness {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(#000, .333);
+	width: 100%;
+	height: 100%;
+	z-index: 108 * 108 * 108;
+	display: none;
+}
+
+.modal-window {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 108 * 108 * 108 * 108;
+	display: none;
+	border: 1px solid #E6E6E6;
+	background: #F5F5F5;
+	margin: 10em auto 0;
+	width: $site-width / 3.5;
+	position: relative;
+	@media (max-width: $site-width / 3) {
+		width: 100%;
+		margin-top: 4em;
+	}
+	.form-place {
+		padding: 1em;
+	}
+	.submit {
+		text-align: center;
+		.btn {
+			display: inline-block;
+			border: 1px solid $blue;
+			color: #303030;
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+	}
+	input, textarea, select {
+		border: 1px solid $blue;
+		font-size: 14px;
+	}
+	input {
+		margin-bottom: 1em;
+	}
+	textarea {
+		margin-bottom: 2em;
+	}
+	select {
+		margin-bottom: 1rem;
+	}
+	.title-form {
+		color: #303030;
+		font-size: 20px;
+		background: #FFF;
+		text-align: center;
+		padding: 1rem 2rem;
+		div {
+			text-align: center;
+			&:nth-child(1) {
+				font-size: 24px;
+				line-height: 26px;
+			}
+			&:nth-child(1) {
+				font-size: 20px;
+				line-height: 24px;
+			}
+		} 
+	}
+
+	.add-resume {
+		padding-bottom: 1em;
+		.button {
+			background: $blue; 
+			border-radius: 1rem;
+			color: #FFF; 
+			@include after;
+			font-size: 15px;
+			padding: .5em 1em;
+			cursor: pointer;
+			@include transition(.6s);
+			&:hover {
+				background: tint($blue, 24);
+			}
+			span, i {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			i {
+				float: right;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 2px;
+			}
+		}
+	}
+
+	.icons-close {
+		position: absolute;
+		top: 1.25rem;
+		right: 1rem;
+		cursor: pointer;
+		@include transition(.666s);
+		&:hover {
+			@include rotate(360deg);
+		}
+		@media (max-width: $site-width / 3) {
+			// top: -2.5em;
+			// right: 1.5em;
+		}
+	}
+	&#register-form-place {
+		width: $site-width / 2.5;
+		@media (max-width: $site-width / 2.5) {
+			width: calc(100% - 1rem);
+		}
+		.form-place {
+			.group {
+				.cell {
+					width: 100%;
+					&:nth-child(2) {
+						width: 49%;
+						margin-right: 2%;
+					}
+					&:nth-child(3) {
+						width: 49%;
+					}
+					@media (max-width: 420px) {
+						width: 100% !important;
+						margin-right: 0 !important;
+					}
+				}
+			}
+		}
+	}
+	&#resume-form-place {
+		textarea {
+			margin-bottom: 1em;
+		}
+	}
+}

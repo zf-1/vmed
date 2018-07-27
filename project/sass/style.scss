@@ -1,0 +1,43 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/reset";
+@import "compass/css3/transition";
+@import "compass/css3/filter";
+
+@import "compass/utilities/sprites";
+$icons-spacing: 20px;
+$icons-sprite-dimensions: true;
+$icons-layout:smart; 
+@import "icons/*.png";
+@include all-icons-sprites;
+
+@import "controller/_var"; // переменные и цвета
+@import "controller/_mixins"; // миксины
+@import "controller/_grids"; // сетка
+
+@import "modules/_placeholders"; // плейсхолдеры
+@import "modules/_base"; // базовые стили сайта
+@import "modules/_presentation"; // презентационные классы
+@import "modules/_modal_windows"; // модальные окна
+
+@import "modules/_base"; //base
+
+@import "modules/_header"; //header
+@import "modules/_footer"; //footer
+@import "modules/_content"; //content
+@import "modules/_category"; //category
+@import "modules/_adaptive"; //adaptive
+@import "modules/_modules"; //modules
+@import "modules/_forms"; //forms
+@import "modules/_formstyler"; //formstyler
+
+@import "pages/_page_index"; //index
+@import "pages/_page_one_specs"; //_page_one_specs
+@import "pages/_page_all_specs"; //
+@import "pages/_page_all"; //all
+
+
+// @import "modules/_wp_classes"; //классы wordpress
+@import "modules/_icheck"; //стили плагина icheck
+@import "modules/_jquery_ui"; //стили плагина jquery ui
+// @import "modules/_bootstrap_style"; //стили bootstrap

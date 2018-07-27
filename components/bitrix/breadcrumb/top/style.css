@@ -1,0 +1,7 @@
+ul.breadcrumb
+{
+	padding: 5px 10px;
+	font-size: 11px;
+	overflow: auto;
+}
+

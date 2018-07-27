@@ -1,0 +1,6 @@
+.text-block .quote .container{
+	max-width: 100% !important;
+}
+.quote .container .place{
+	width: 96% !important;
+}

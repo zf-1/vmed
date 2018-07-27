@@ -1,0 +1,1689 @@
+.title 
+	position: relative
+	font-size: 32px
+	text-align: center
+	padding: 1rem
+	margin-bottom: 1em
+	line-height: 1em
+	@media (max-width: 520px) 
+		font-size: 26px
+	@media (max-width: 420px) 
+		font-size: 22px
+	+after
+		@extend .icons-label-white
+		margin: 0 auto 
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -.5rem
+	&.white
+		color: #FFF
+.breadcrumbs
+	padding-top: 2rem
+	padding-bottom: 1rem
+	+ullireset
+	ul 
+		text-align: center
+		li 
+			display: inline-block
+			vertical-align: middle
+			padding: 0 1em
+			position: relative
+			+after
+				position: absolute
+				top: 0em
+				right: -.25em
+				content: "/"
+				display: inline-block	
+				color: #9A9A9A			
+			a 
+				color: #9A9A9A
+				font-size: 14px
+				font-weight: 200
+				+proxima-light
+				display: inline-block
+				&:hover 
+					color: shade(#9A9A9A,20)
+			&:last-child
+				&:after
+					display: none
+				a 
+					color: #D7292E
+					&:hover
+						color: shade(#D7292E,20)
+.certificates
+	padding-bottom: 1.5em
+	border-bottom: 1px solid #CDCDCD
+	margin-bottom: 1em
+	.container
+		padding-left: 0
+		padding-right: 0
+	.level-0
+		position: relative
+		background: #FFF
+		.certificates-slider-one
+			.item
+				text-align: center
+				img 
+					max-width: 100%
+					max-height: 320px
+			+grid(7)
+			margin: 0 auto 
+			padding-bottom: 6px
+			.owl-pagination
+				bottom: -1em
+				.owl-page
+					margin-right: 2em
+			@media (max-width: 762px) 
+				width: 100%
+				.item 
+					text-align: center
+					img 
+						max-width: 100%
+.tags
+	+ullireset
+	ul 
+		li 
+			font-size: 12px
+			display: inline-block
+			vertical-align: top
+			margin-right: 6px								
+			line-height: 12px
+			padding: .5em 1em
+			border-radius: 1rem
+			border: 1px solid $blue 
+			background: #FFF
+			color: #9A9A9A
+			margin-bottom: .5em
+			&:hover 
+				background: $blue 
+				color: #FFF
+.reviews
+	border-bottom: 1px solid #BFBFBF
+	padding-bottom: 1em
+	margin-bottom: 1em
+	.container
+		// padding: 0
+	.review-slider
+		margin: 0 auto
+		padding-bottom: 2em
+		+grid(8)
+		+grid-8-fix
+		// width: calc(66.66667% + 32px)
+		@media (max-width: $site-width) 
+			width: 100%
+		.owl-wrapper
+			// padding: 1em
+			@media (max-width: $site-width) 
+				// padding: 0
+		.owl-buttons
+			bottom: 175px
+			@media (max-width: $site-width) 
+				display: none
+			.owl-prev
+				@extend .icons-reviews-slider-move-left
+				left: -3em
+				@media (max-width: $site-width) 
+					left: 0
+				&:hover
+					@extend .icons-reviews-slider-move-left-on
+			.owl-next
+				@extend .icons-reviews-slider-move-right
+				right: -3em
+				@media (max-width: $site-width) 
+					right: 0
+				&:hover
+					@extend .icons-reviews-slider-move-right-on
+		.owl-pagination
+			bottom: 0
+			.owl-page
+				margin-right: 2em
+		.item 
+			width: 100%
+			@media (max-width: $site-width) 
+				// width: 100%
+			.group 
+				display: block
+				margin: 1em auto 1em 
+				border-radius: 4px
+				overflow: hidden
+				background: #F0F0F0
+				// +box-shadow(0px 1px 18px 1px rgba(#000, .108))
+				border: 1px solid rgba(#000, .108)
+				display: table
+				.cell 
+					display: table-cell
+					padding: 1em
+					&:nth-child(1) 
+						width: ($h / 8) * 6
+						background: #FFF
+						@media (max-width: 684px) 
+							width: 100%
+							display: block 
+					&:nth-child(2) 
+						width: ($h / 8) * 2
+						background: #F0F0F0
+						color: $text
+						@media (max-width: 684px) 
+							width: 100%
+							display: block 
+						.section
+							margin-bottom: 1em
+							.sec-title
+								font-size: 12px
+								text-transform: uppercase
+								color: rgba(#000, .5)
+							.name 
+								font-size: 14px
+								color: $text
+								b 
+									+proxima-cold-bold	
+									font-size: 18px
+									display: block
+							&.client
+								.name 
+									padding-left: 50px
+									font-size: 12px
+									position: relative
+									b 
+										font-size: 14px
+										color: $blue
+									.avatar
+										border-radius: 108em
+										background-size: cover
+										background-position: center
+										position: absolute
+										left: 0
+										top: 1em
+										height: 40px
+										width: 40px
+										@media (max-width: 684px) 
+											top: 0
+						.all 
+							a 
+								font-size: 12px
+								line-height: 1em
+								border-bottom: 1px dotted
+								color: $blue
+					.date
+						font-size: 12px
+						color: #CDCDCD
+						text-transform: uppercase
+						margin-bottom: 1em
+					.tags 
+						margin-bottom: 1em
+						li 	
+							font-size: 12px
+							margin-right: 2px
+							padding: .5em .75em
+					.text 
+						font-size: 16px
+						line-height: 1.2em
+					.show-more 
+						a 
+							font-size: 12px
+							border-bottom: 1px dotted
+							line-height: 12px
+							color: #00B7F9
+.price-block
+	.container 
+		.grid
+			.cell-10
+				+cell-reset
+		.block-head
+			>p 
+				font-size: 15px
+				text-align: center
+			.tabs 
+				@extend %tabs	
+		.services
+			padding-top: 1em
+			padding-bottom: 1em
+			.search
+				background: #F5F5F5
+				position: relative
+				border-bottom: 1px solid #E6E6E6
+				padding-top: 6px
+				+before
+					position: absolute
+					left: .5em 
+					top: .5em
+					@extend .icons-price-search
+				input[type=text]
+					border-top: 0
+					background: none
+					border: none
+					color: #303030
+					font-size: 15px
+					padding-left: 2.5em
+					// padding-top: 6px
+					line-height: 17px
+					margin-bottom: 6px
+					+input-placeholder
+						font-size: 15px
+						color: #303030
+			.list 
+				+ullireset
+				>ul 
+					>li 
+						div 
+							padding: 1em
+							padding-right: 2.5em
+							font-size: 14px
+							position: relative
+							cursor: pointer
+							+after
+								position: absolute
+								right: 1em
+								top: 1.3em
+								@extend .icons-price-arrow
+						span 
+							color: #666
+						.count
+							display: none
+						&:nth-child(odd) 
+							background: #FFF
+						&:nth-child(even) 
+							background: #F5F5F5
+						&.open 
+							background: #ED2F2F
+							>div 
+								&:after
+									@extend .icons-price-arrow-down
+									top: 1.5em
+							span 
+								color: #FFF
+							.count 
+								display: block 
+								color: #FFF 
+								float: right 
+								b 
+									font-size: 18px
+									font-weight: 400
+						>ul 
+							background: #E3F6F8
+							display: none
+							>li 
+								font-size: 14px
+								padding: 1em 
+								padding-left: 2em
+								+after
+								span 
+									color: #000 !important
+									display: block
+									&:nth-child(1) 
+										float: left 
+										width: calc(100% - 60px)
+									&:nth-child(2) 
+										float: right
+										width: 60px
+										text-align: right
+								&.more 
+									text-align: center
+									padding: .9em
+									background: #9CE2E8
+									font-size: 16px
+									color: #00959B
+			.show-more
+				text-align: center
+				padding-top: 1em
+				.btn 
+					font-size: 16px
+					+proxima-cold-bold
+					color: #303030
+					border: 1px solid $blue 
+					border-radius: 1.5em
+					display: inline-block
+					vertical-align: top
+					padding-left: 1.5em 
+					padding-right: 1.5em 
+					&:hover 
+						background: $blue 
+						color: #FFF
+	&.type-two
+		.container
+			.services
+				.list 
+					>ul 
+						>li 
+							div 
+								cursor: default
+								&:after
+									display: none
+							&:nth-child(odd) 
+								background: #FFF
+							&:nth-child(even) 
+								background: #E3F6F8
+				.final-price
+					background: $red2
+					padding: .5em 1em
+					color: #FFF 
+					margin-top: 1em
+					text-align: right 
+					@media (max-width: 768px) 
+						text-align: center
+					span 
+						font-weight: 700
+						&:nth-child(1) 
+							margin-right: 1em
+.doctors-block
+	.grid
+		.cell-10
+			@media (max-width: 768px) 
+				width: $h 
+				margin-left: 0
+			.doctors-slider
+				padding-bottom: 2em
+
+				.owl-wrapper
+					padding-top: 1em
+					padding-bottom: 1em
+				.owl-buttons
+					bottom: 175px
+					@media (max-width: 768px) 
+						display: none
+					.owl-prev
+						@extend .icons-reviews-slider-move-left
+						left: -3em
+						&:hover
+							@extend .icons-reviews-slider-move-left-on
+					.owl-next
+						@extend .icons-reviews-slider-move-right
+						right: -3em
+						&:hover
+							@extend .icons-reviews-slider-move-right-on
+				.owl-pagination
+					.owl-page
+						margin-right: 2em
+				.item 
+					@extend %doctors-list-item-style
+.page-navigation
+	background: #E3F6F8
+	border-top: 1px solid #9CE2E8
+	border-bottom: 1px solid #9CE2E8
+	margin-bottom: 1em
+	.container 
+		padding-top: 1em
+		padding-bottom: 1em
+		@media (max-width: $site-width) 
+			padding-left: 3em
+			padding-right: 3em
+		.grid 
+			.cell-10
+				+after
+				@media (max-width: $site-width) 
+					width: calc(768px - 6em) !important
+				@media (max-width: 828px) 
+					width: calc(100% - 6em) !important
+				@media (max-width: 500px) 
+					width: calc(100% - 4em) !important
+				.prev
+					float: left 
+					position: relative
+					a 
+						display: block 
+						color: $text 
+						text-align: left 
+						span, b 
+							display: block 
+						span 
+							font-size: 12px
+						b 
+							font-size: 18px
+						+after
+							@extend .icons-page-nav-left
+							position: absolute
+							left: -4em
+							top: .5em
+						&:hover
+							color: $blue 
+							&:after
+								@extend .icons-page-nav-left-on
+				.next 
+					float: right 
+					position: relative
+					a 
+						display: block 
+						color: $text 
+						text-align: right 
+						span, b 
+							display: block 
+						span 
+							font-size: 12px
+						b 
+							font-size: 18px
+						+after
+							@extend .icons-page-nav-right
+							position: absolute
+							right: -4em
+							top: .5em
+						&:hover
+							color: $blue 
+							&:after
+								@extend .icons-page-nav-right-on
+			.cell-10
+				// @media (max-width: ) 
+.seo-text
+	.cell-10
+		+cell-reset
+	.container
+		padding-bottom: 1em
+		p 
+			// text-align: justify 
+			font-size: 15px
+.doctors-list
+	margin: 1em 0
+	border-top: 1px solid #E6E6E6
+	.container
+		padding: 1em
+		.place 
+			font-size: 0
+			text-align: center
+			.item 
+				@extend %doctors-list-item-style
+				display: inline-block
+				vertical-align: top 
+				font-size: 1rem
+				margin: 0
+				margin-bottom: 1em
+				width: $h/4 - 1
+				margin-right: 1.333%
+				border-radius: 4px
+				position: relative
+				+box-shadow(0 1px 12px 0 rgba(#7A8D8E, .45))
+				&:nth-child(4n) 
+					margin-right: 0
+				@media (max-width: $site-width) 
+					margin-bottom: 1em
+					width: $h/3 - 1
+					margin-right: 1.444%
+					&:nth-child(4n) 
+						margin-right: 1.444%
+					&:nth-child(3n) 
+						margin-right: 0
+				@media (max-width: 776px) 
+					width: $h/2 - 1
+					margin-right: 2%
+					&:nth-child(4n) 
+						margin-right: 2%
+					&:nth-child(3n) 
+						margin-right: 2%
+					&:nth-child(2n) 
+						margin-right: 0
+				@media (max-width: 550px) 
+					width: 100% !important
+					margin-right: 0 !important
+				.adress
+					background: #F0F0F0
+					color: #303030
+					text-align: left
+					padding-left: 1em
+					padding-right: 1em
+				.avatar
+					position: absolute
+					left: .5em 
+					top: .75em
+				.profession
+					padding-left: 112px
+					text-align: left
+				.name 
+					padding-left: 112px
+					text-align: left 
+
+.quote 
+	background: #E3F6F8
+	padding: 1em 0
+	.container 
+		.place 
+			border: 3px solid #00959B
+			padding: 1.5em 
+			text-align: center
+			+grid(8)
+			margin: 0 auto
+			position: relative
+			@media (max-width: $site-width) 
+				width: calc(768px - 2em)
+			@media (max-width: 768px) 
+				width: 100%
+			+before
+				position: absolute
+				left: 2em
+				top: -13px
+				@extend .icons-quote
+				z-index: 1
+			p 
+				font-size: 24px
+				line-height: 1.333em
+				color: #303030
+				@media (max-width: 600px) 
+					font-size: 18px
+				+proxima-light
+				strong 
+					+proxima-reg
+					font-weight: 800
+.where-block
+	.container 
+		padding-bottom: 2em
+		.grid 
+			.cell-8
+				margin: 0 auto 
+				width: calc(66.66667% + 2em)
+				display: block
+				@media (max-width: $site-width) 
+					width: 100%
+				.where-slider 
+					.owl-wrapper
+						padding: 1em 0
+					.owl-buttons
+						bottom: 200px
+						@media (max-width: 768px) 
+							display: none
+						.owl-prev
+							@extend .icons-reviews-slider-move-left
+							left: -3em
+							@media (max-width: $site-width) 
+								left: -1em
+							&:hover
+								@extend .icons-reviews-slider-move-left-on
+						.owl-next
+							@extend .icons-reviews-slider-move-right
+							right: -3em
+							@media (max-width: $site-width) 
+								right: -1em
+							&:hover
+								@extend .icons-reviews-slider-move-right-on
+					.owl-pagination
+						bottom: -1em
+						.owl-page
+							margin-right: 2em
+					.item 
+						+box-shadow(0 1px 12px 0 rgba(#7A8D8E, .45))
+						border-radius: 4px
+						margin: 0 1em
+						&:hover
+							+box-shadow(0 1px 12px 0 rgba(#00959B, .65))
+							.level-0
+								.name 
+									a 
+										color: $blue 
+								.more 
+									a 
+										color: $blue 
+										border-color: $blue
+						.level-0
+							padding: 1em 
+							.name 
+								font-weight: 700
+								font-size: 20px
+								margin-bottom: .5rem
+								a 
+									color: #666
+							.info
+								min-height: 120px
+								.phone
+									position: relative
+									padding-left: 1.5em
+									+before
+										@extend .icons-where-phone
+										position: absolute
+										top: 0
+										left: 0 
+									a 
+										color: #303030
+										font-size: 18px
+										font-weight: 700
+										display: inline-block
+										vertical-align: middle
+								.address
+									position: relative
+									padding-left: 1.5em
+									+before
+										@extend .icons-where-home
+										position: absolute
+										top: 0
+										left: 0 
+									span 
+										font-size: 16px
+										color: #303030
+								.time
+									position: relative
+									padding-left: 1.5em
+									+before
+										@extend .icons-where-time
+										position: absolute
+										top: 0
+										left: 0 
+									p 
+										margin-bottom: .25em
+										&:last-child
+											margin-bottom: 0
+										span 
+											display: inline-block
+											vertical-align: middle
+											&:nth-child(1) 
+												color: #666
+											&:nth-child(2) 
+												color: #303030
+							.more 
+								a 
+									color: #CDCDCD
+									border-bottom: 1px dotted
+									font-size: 12px
+									line-height: 14px
+						.level-1 
+							.map 
+								height: 190px
+								background-size: cover
+								background-position: center
+								position: relative
+								+absoluteLink
+.head
+	.container 
+		padding: 1em
+		padding-top: 0
+		.grid
+			.cell-10
+				text-align: center
+.switcher
+	position: relative
+	background: #E1E1E1
+	border-radius: 1em
+	width: 3em 
+	height: 1.5em
+	padding: .25em 
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	+transition(.108s)
+	+after
+		position: absolute
+		top: .25em 
+		left: 1.75em
+		height: 1em
+		width: 1em
+		border-radius: 108em
+		background: $red2
+		+transition(.108s)
+	&.off
+		&:after
+			background: #9A9A9A
+			left: .25em 
+	&:hover
+		background: tint(#E1E1E1, 16)
+.benefit
+	border-bottom: 1px solid #CDCDCD
+	padding-bottom: 2em
+	.container 
+		.cell-4 
+			position: relative 
+			padding-left: 6em
+			padding-right: 1rem
+			@media (max-width: 400px) 
+				width: 100%
+				padding-left: 0
+			i, img
+				position: absolute
+				left: 0
+				top: 1em
+			div 
+				span 
+					display: block 
+					&:nth-child(1) 
+						font-size: 18px
+						font-weight: 700
+						color: #666
+						margin-bottom: 1em
+					&:nth-child(2) 
+						font-size: 15px
+						color: #9A9A9A
+			@media (max-width: 1108px) 
+				// display: block 
+				// margin: 0 auto 
+				// width: 378px
+				// margin-bottom: 1rem
+				padding-left: 0
+				&:last-child 
+					// margin-bottom: 0
+				i, img 
+					position: relative
+					left: inherit 
+					top: inherit 
+					display: block 
+					margin: 0 auto 1rem
+				div 
+					text-align: center
+			@media (max-width: 768px) 
+				display: block 
+				margin: 0 auto 
+				width: 378px
+				margin-bottom: 1rem
+				padding-left: 0
+				&:last-child 
+					margin-bottom: 0
+			@media (max-width: 410px) 
+				width: 100%
+.price-type-2
+	padding: 1em 0 2em
+	.container 
+		.select
+			padding: .5em
+			background: #F5F5F5
+			select 
+				max-width: 320px
+				margin: 0 auto 
+				display: block
+		.list 
+			+ullireset
+			margin-bottom: 1em
+			ul 
+				li 
+					+after
+					&:nth-child(odd) 
+						background: #FFF 
+					&:nth-child(even) 
+						background: #E3F6F8
+					span 
+						display: block 
+						padding: 1em
+						color: #000
+						&:nth-child(1) 
+							float: left
+							width: calc(100% - 100px)
+						&:nth-child(2) 
+							width: 100px
+							float: right 
+		.show-more
+			text-align: center 
+			.btn 
+				font-size: 16px
+				font-weight: 700
+				border: 1px solid $blue 
+				padding: .5em 2em
+				color: #303030
+				&:hover 
+					color: shade(#303030, 20)
+.info-text-block
+	.tabs 
+		margin-bottom: 1rem
+		@extend %tabs
+	.text-block 
+		display: none
+		&.block-1
+			display: block 
+		.group 
+			margin-bottom: 1rem
+			.cell 
+				width: 50%
+				img 
+					max-width: 100%
+				&.img-cell
+					padding-right: .5rem
+				@media (max-width: 768px) 
+					width: 100% !important
+					&.img-cell
+						text-align: center
+.new-programs
+	// border-bottom: 1px solid #BFBFBF
+	padding-bottom: 1em
+	margin-bottom: 1em
+	.container
+		// padding: 0
+		@media (max-width: 800px) 
+			// padding: 0
+	.slider-new-programs
+		margin: 0 auto
+		padding-bottom: 2em
+		+grid(8)
+		+grid-8-fix
+		// width: calc(66.66667% + 32px)
+		@media (max-width: $site-width) 
+			width: 100%
+		.owl-wrapper
+			// padding: 1em
+			.owl-item
+				padding: 1px
+			@media (max-width: $site-width) 
+				// padding: 0
+		.owl-buttons
+			bottom: 125px
+			@media (max-width: $site-width) 
+				display: none
+			.owl-prev
+				@extend .icons-reviews-slider-move-left
+				left: -3em
+				@media (max-width: $site-width) 
+					left: 0
+				&:hover
+					@extend .icons-reviews-slider-move-left-on
+			.owl-next
+				@extend .icons-reviews-slider-move-right
+				right: -3em
+				@media (max-width: $site-width) 
+					right: 0
+				&:hover
+					@extend .icons-reviews-slider-move-right-on
+		.owl-pagination
+			bottom: 0
+			.owl-page
+				margin-right: 2em
+		.item 
+			border-radius: 4px
+			border: 1px solid #D7D7D7
+			position: relative
+			overflow: hidden
+			&:hover
+				border-color: $blue 
+				a 
+					color: $blue !important
+			+after
+			@media (max-width: 800px) 
+				margin: 0 1em 
+			.img 
+				width: 176px
+				height: 176px
+				float: left 
+				background-size: cover
+				z-index: 0
+				position: relative
+				@media (max-width: 800px) 
+					width: 100%
+				a 
+					position: absolute
+					left: 0 
+					top: 0 
+					width: 100%
+					height: 100%
+			.place 
+				position: relative
+				z-index: 0
+				width: calc(100% - 176px)
+				float: left 
+				padding: 1em
+				padding-bottom: .5rem
+				+ullireset
+				@media (max-width: 800px) 
+					width: 100%
+				.level-0 
+					font-size: 12px
+					color: #9A9A9A
+					text-transform: uppercase
+				.level-1 
+					+after 
+					div 	
+						float: left 
+						color: #303030
+						a 
+							color: #303030
+						&:nth-child(1) 
+							width: calc(100% - 118px)
+							padding-right: 2em
+							font-size: 20px
+							font-weight: 700
+							@media (max-width: 400px) 
+								font-size: 21px
+							@media (max-width: 360px) 
+								font-size: 18px
+						&:nth-child(2) 
+							width: 118px
+							font-size: 24px
+							font-weight: 700
+							line-height: 1em
+							@media (max-width: 800px) 
+								br 
+									display: none
+							@media (max-width: 400px) 
+								font-size: 18px
+								i 
+									zoom: 75%
+							+dib
+							i 
+								margin-left: 4px
+						@media (max-width: 800px) 
+							width: 100% !important
+							padding-bottom: .5rem
+				.level-2 
+					ul 
+						li 
+							font-size: 14px
+							color: #666
+							+dib
+							+before
+								@extend .icons-ul-check
+								display: inline-block
+								vertical-align: middle
+								margin-right: 6px
+							span 
+								display: inline
+				.level-3
+					+after
+					padding-top: .5rem
+					.more	
+						width: 108px
+						float: left 
+						@media (max-width: 800px) 
+							width: 100%
+							padding-bottom: .5rem
+						a 
+							font-size: 12px
+							color: #9A9A9A
+							border-bottom: 1px dotted
+							line-height: 1em
+					.tags 
+						float: left 
+						width: calc(100% - 108px)
+						text-align: right
+						@media (max-width: 800px) 
+							width: 100%
+							text-align: center
+						.tag
+							+dib
+							border-radius: 2em
+							background: $red2
+							color: #FFF
+							display: inline-block
+							padding-right: .5em
+							line-height: 1.5em
+							font-size: 14px
+							padding-left: 2px
+							padding-top: 1px
+							padding-bottom: 1px
+							margin-bottom: .5rem
+							img 
+								line-height: 1em
+								vertical-align: top
+							span 
+								line-height: 1em
+								vertical-align: top
+								padding-top: 4px
+.all-programs
+	.container
+		.filter
+			@extend %all-filter
+			.group 
+				.cell 
+					&:nth-child(2) 
+						position: relative
+		.programs-place
+			.item 
+				border-radius: 4px
+				border: 1px solid #D7D7D7
+				position: relative
+				overflow: hidden
+
+				margin-bottom: 1rem
+				+after
+				@media (max-width: 800px) 
+					// margin: 0 1em 1em
+				
+				.img 
+					width: 176px
+					height: 176px
+					float: left 
+					background-size: cover
+					z-index: 0
+					position: relative
+					@media (max-width: 600px) 
+						width: 100%
+					a 
+						position: absolute
+						left: 0 
+						top: 0 
+						width: 100%
+						height: 100%
+						display: block
+				&:hover
+					border-color: $blue
+					.place 
+						.level-1, .level-3
+							a 
+								color: $blue !important
+				.place 
+					position: relative
+					z-index: 0
+					width: calc(100% - 176px)
+					float: left 
+					padding: 1em
+					padding-bottom: .5rem
+					+ullireset
+					@media (max-width: 600px) 
+						width: 100%
+					.level-0 
+						font-size: 12px
+						color: #9A9A9A
+						text-transform: uppercase
+					.level-1 
+						+after 
+						div 	
+							float: left 
+							a 
+								color: #303030
+							&:nth-child(1) 
+								width: calc(100% - 118px)
+								padding-right: 2em
+								font-size: 20px
+								font-weight: 700
+								@media (max-width: 400px) 
+									font-size: 21px
+								@media (max-width: 360px) 
+									font-size: 18px
+							&:nth-child(2) 
+								width: 118px
+								font-size: 24px
+								font-weight: 700
+								line-height: 1em
+								@media (max-width: 800px) 
+									br 
+										display: none
+								@media (max-width: 400px) 
+									font-size: 18px
+									i 
+										zoom: 75%
+								+dib
+								i 
+									margin-left: 4px
+							@media (max-width: 800px) 
+								width: 100% !important
+								padding-bottom: .5rem
+					.level-2 
+						ul 
+							li 
+								font-size: 14px
+								color: #666
+								+dib
+								+before
+									@extend .icons-ul-check
+									display: inline-block
+									vertical-align: middle
+									margin-right: 6px
+								span 
+									display: inline
+					.level-3
+						+after
+						padding-top: .5rem
+						.more	
+							width: 108px
+							float: left 
+							@media (max-width: 800px) 
+								width: 100%
+								padding-bottom: .5rem
+							a 
+								font-size: 12px
+								color: #9A9A9A
+								border-bottom: 1px dotted
+								line-height: 1em
+						.tags 
+							float: left 
+							width: calc(100% - 108px)
+							text-align: right
+							@media (max-width: 800px) 
+								width: 100%
+								text-align: center
+							.tag
+								+dib
+								border-radius: 2em
+								background: $red2
+								color: #FFF
+								display: inline-block
+								padding-right: .5em
+								line-height: 1.5em
+								font-size: 14px
+								padding-left: 2px
+								padding-top: 1px
+								padding-bottom: 1px
+								margin-bottom: .5rem
+								img 
+									line-height: 1em
+									vertical-align: top
+								span 
+									line-height: 1em
+									vertical-align: top
+									padding-top: 4px
+		+filter-navigation
+.timeline 
+	padding-top: 1em
+	@media (max-width: 768px) 
+		padding-bottom: 1em
+	.place
+		position: relative
+		+after
+		+before
+			position: absolute
+			left: 0
+			right: 0
+			margin: 0 auto
+			background: $red2
+			height: calc(100% - 74px)
+			width: 1px
+			display: block
+			@media (max-width: 768px) 
+				right: inherit 
+				margin-left: 0
+				height: 100%
+		.section
+			width: 322px
+			position: relative
+			margin-bottom: 180px
+			@media (max-width: 768px) 
+				margin-bottom: 2em
+				width: 500px
+			@media (max-width: 530px) 
+				width: 320px
+			@media (max-width: 400px) 
+				width: 100%
+			+before
+			+after
+			&.left
+				text-align: right 
+				padding-right: 5em
+				margin-top: 140px
+				@media (max-width: 768px)
+					text-align: left
+					padding-right: 0
+					padding-left: 7em
+					float: none
+					margin-top: 0
+				i, img
+					position: absolute
+					top: 1em
+					right: 1em
+					@media (max-width: 768px)
+						right: inherit
+						left: 2em
+						top: 36%
+				&:before
+					position: absolute
+					right: -66px
+					top: 50%
+					@extend .icons-line-dot-left
+					@media (max-width: $site-width) 
+						right: -56px
+					@media (max-width: 768px)
+						display: none
+				&:after
+					position: absolute
+					left: -66px
+					top: 50%
+					display: none
+					@extend .icons-line-dot-right
+					@media (max-width: 768px)
+						display: block
+						left: -10px
+						width: 30px
+			&.right 
+				text-align: left
+				padding-left: 5em
+				@media (max-width: 768px)
+					float: none
+					padding-left: 7em
+				i, img
+					position: absolute
+					top: 1em
+					left: 1em
+					@media (max-width: 768px)
+						top: 36%
+						left: 2em
+				&:before
+					position: absolute
+					left: -66px
+					top: 50%
+					@extend .icons-line-dot-right
+					@media (max-width: $site-width) 
+						left: -56px
+					@media (max-width: 768px)
+						left: -10px
+						width: 30px
+			&:nth-child(4) 
+				margin-top: 0
+				// margin-bottom: 0
+			&:nth-child(6) 
+				margin-top: 0
+			&:nth-child(8) 
+				margin-top: 0
+			&:nth-child(10) 
+				margin-top: 0
+			&:last-child
+				margin-bottom: 0
+			div 
+				&:nth-child(1) 
+					color: $red2
+					font-size: 18px
+					font-weight: 700
+					margin-bottom: 1rem
+				&:nth-child(2) 
+					font-size: 15px
+					color: #333333
+.programs-block
+	.container
+		padding: 0 
+		.programs-place
+			font-size: 0
+			a.item 
+				position: relative
+				display: inline-block
+				vertical-align: top 				
+				+grid(4)
+				font-size: 1rem
+				margin: 0 0em 1em 
+				padding-left: 1em 
+				padding-right: 1em
+				&:hover
+					.place 
+						&:before
+							background: rgba($blue, .8)
+				@media (max-width: 1000px) 
+					+grid(6)
+				@media (max-width: 700px) 
+					+grid(12)
+				.place 
+					+before
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 0
+						background: rgba($blue, .0)
+						top: 0
+						+transition(.333s)
+						left: 0
+					position: relative
+					color: #FFF 
+					height: 320px
+					overflow: hidden
+					border-radius: 4px 
+					position: relative
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center
+					padding: 1em
+					padding-top: 3em
+					@media (max-width: 700px) 
+						height: auto
+						padding-bottom: 3em
+						padding-top: 1em
+					>div 
+						position: relative
+						z-index: 1
+					.level-0
+						text-transform: uppercase
+						font-size: 12px
+						line-height: 1em
+						margin-bottom: .5rem
+					.level-1
+						font-size: 24px
+						font-weight: 700
+						line-height: 1em
+						min-height: 4rem
+						margin-bottom: .5rem
+						@media (max-width: 400px) 
+							font-size: 18px
+					.level-2
+						font-size: 14px
+						line-height: 1em
+					.level-3
+						position: absolute
+						left: 1em 
+						bottom: 1em
+						width: 100%
+						a 
+							color: #FFF 
+							border-bottom: 1px dotted
+							font-size: 12px
+							line-height: 1em
+.actions-block
+	padding-bottom: 1em
+	.container 
+		.slider-actions-block
+			.owl-wrapper
+				padding: 1em 0
+				.owl-item
+					padding: 1px
+				@media (max-width: $site-width) 
+					// padding: 0
+			.owl-buttons
+				bottom: 125px
+				@media (max-width: $site-width) 
+					display: none
+				.owl-prev
+					@extend .icons-reviews-slider-move-left
+					left: -3em
+					@media (max-width: $site-width) 
+						left: 0
+					&:hover
+						@extend .icons-reviews-slider-move-left-on
+				.owl-next
+					@extend .icons-reviews-slider-move-right
+					right: -3em
+					@media (max-width: $site-width) 
+						right: 0
+					&:hover
+						@extend .icons-reviews-slider-move-right-on
+			.owl-pagination
+				bottom: -1em
+				.owl-page
+					margin-right: 2em
+			.item 
+				@extend %actions-block-item-style
+.all-skidka
+	+filter-navigation
+	.filter	
+		@extend %all-filter
+	.skidka-result-place
+		.item 
+			margin-bottom: 1rem
+			@extend %actions-block-item-style
+.articles
+	padding-bottom: 2em
+	border-bottom: 1px solid #CDCDCD 
+	.container
+		.grid 
+			.articles-slider
+				.owl-wrapper
+					padding: 1em 0
+					.owl-item
+						padding: 1px
+					@media (max-width: $site-width) 
+						// padding: 0
+				.owl-buttons
+					bottom: 170px
+					@media (max-width: $site-width) 
+						display: none
+					.owl-prev
+						@extend .icons-reviews-slider-move-left
+						left: -3em
+						@media (max-width: $site-width) 
+							left: 0
+						&:hover
+							@extend .icons-reviews-slider-move-left-on
+					.owl-next
+						@extend .icons-reviews-slider-move-right
+						right: -3em
+						@media (max-width: $site-width) 
+							right: 0
+						&:hover
+							@extend .icons-reviews-slider-move-right-on
+				.owl-pagination
+					bottom: -1em
+					.owl-page
+						margin-right: 2em
+				.item 
+					border: 1px solid #DEE2E2 
+					margin: 0 1em
+					border-radius: 4px
+					position: relative
+					overflow: hidden
+					&:hover 
+						border-color: $blue 
+						.level-3
+							a 
+								color: $blue 
+					.level-0 
+						padding: 1em 
+						color: #FFF 
+						a 	
+							color: #FFF 
+						.type 
+							font-size: 12px
+							margin-bottom: 2em
+						.name
+							font-size: 20px
+							font-weight: 700
+							min-height: 3rem
+					.level-1 
+						padding: 1em
+						font-size: 14px
+						line-height: 20px
+						color: #818181
+					.level-2 
+						padding: 0 1em 0.5em
+					.level-3 
+						padding: 0 1em 1em 
+						a 
+							color: #9A9A9A
+							border-bottom: 1px dotted
+							font-size: 12px
+							line-height: 1em	
+							&:hover 
+								border-bottom: 0	
+.all-news-slider
+	padding: 3em 0
+	.list
+		// font-size: 0
+		.owl-wrapper
+			padding: .5em 0
+			.owl-item
+				padding: 1px
+			@media (max-width: $site-width) 
+				// padding: 0
+		.owl-buttons
+			bottom: 170px
+			@media (max-width: $site-width) 
+				display: none
+			.owl-prev
+				@extend .icons-reviews-slider-move-left
+				left: -3em
+				@media (max-width: $site-width) 
+					left: 0
+				&:hover
+					@extend .icons-reviews-slider-move-left-on
+			.owl-next
+				@extend .icons-reviews-slider-move-right
+				right: -3em
+				@media (max-width: $site-width) 
+					right: 0
+				&:hover
+					@extend .icons-reviews-slider-move-right-on
+		.owl-pagination
+			bottom: -1.5em
+			.owl-page
+				margin-right: 2em
+		.item 
+			display: block
+			vertical-align: top 
+			font-size: 1rem
+			padding: 0 .5em
+			margin-bottom: 1rem
+			+transition(.3s)
+			border-radius: 4px
+			position: relative
+			.place 
+				position: relative
+				+box-shadow(0px 1px 18px 1px rgba(#000, .108))
+				.level-0 
+					padding: 1rem
+					padding-bottom: 0
+					font-size: 12px
+					text-transform: uppercase
+					color: #CDCDCD
+				.level-1 
+					padding: 1rem
+					padding-top: .5rem
+					min-height: 6em
+					padding-bottom: .5rem
+					margin-bottom: .5rem
+					@media (max-width: 480px) 
+						min-height: inherit
+					a 
+						color: #303030
+						font-weight: 700
+				.level-2 
+					padding: 0 1rem
+					font-size: 14px
+					min-height: 6rem
+				.level-3 
+					padding: 1rem
+					a 
+						color: #9A9A9A
+						border-bottom: 1px dotted
+						font-size: 12px
+						line-height: 1em	
+						&:hover 
+							border-bottom: 0							
+			&:hover 
+				.place 
+					+box-shadow(0 1px 12px 0 rgba(#00959B, .65))
+					.level-0
+						background: $blue 
+						color: #FFF 
+					.level-1 
+						background: $blue 
+						color: #FFF 
+						a 
+							color: #FFF 
+					.level-3 
+						a 
+							color: $blue
+.place-card
+	padding: 1em 0 2em
+	border-bottom: 1px solid #CDCDCD
+	margin-bottom: 1rem
+	.container 
+		.grid 
+			+box-shadow(0px 0px 6px 1px rgba(#7A8D8E, .65))
+			border-radius: 4px
+			overflow: hidden
+			height: 320px
+			+transition(.6s)
+			&:hover 
+				+box-shadow(0px 0px 6px 1px rgba($blue, .65))
+				.info , .phone
+					a 
+						color: $blue !important
+			@media (max-width: 1000px) 
+				height: auto
+			h2 
+				font-weight: 700
+				font-size: 24px
+				margin-bottom: 1rem
+				color: #666
+				position: relative
+			.image 
+				@media (max-width: 1000px) 
+					width: 100%
+				.img 
+					height: 321px
+					background-size: cover
+					background-position: top center
+					background-repeat: no-repeat
+					max-width: 320px
+					margin: 0 auto
+					position: relative
+					+absoluteLink
+					@media (max-width: 1000px) 
+						height: 240px
+			.info
+				padding: 2em 
+				a 
+					color: $text 
+				p 
+					line-height: 1.333em
+				@media (max-width: 1000px) 
+					+grid(6)
+				@media (max-width: 658px) 
+					+grid(12)
+					padding-bottom: 0
+			.contacts
+				padding: 2em
+				padding-right: 1em
+				padding-left: 0
+				+dib 
+				position: relative 
+				@media (max-width: 1000px) 
+					+grid(6)
+				@media (max-width: 658px) 
+					+grid(12)
+					padding-left: 2em
+					padding-top: 1em
+				i 
+					position: absolute
+					top: 0
+					left: 0 
+				.location
+					padding-left: 2em
+					position: relative 
+					color: #303030
+					margin-bottom: 1rem
+				.phone 
+					padding-left: 2em
+					position: relative 
+					margin-bottom: 1rem
+					a 
+						color: $text 
+					span 
+						font-size: 24px
+						color: #303030
+				.time 
+					padding-left: 2em
+					position: relative 
+					margin-bottom: 1rem
+					div 
+						.d 
+							color: #666
+						.t 
+							color: #303030
+				.button 
+					text-align: center
+					.btn 
+						display: inline-block
+						padding-left: 2em
+						padding-right: 2em
+				.i-place 
+					// text-align: center
+					a 
+						display: inline-block
+						vertical-align: top 
+						margin-right: .5rem
+						&:last-child 
+							margin-right: 0
+						i 
+							position: relative 
+							left: inherit 
+							top: inherit 
+							+filter(grayscale(100%))
+							+transition(.6s)
+						&:hover 
+							i 
+								+filter(grayscale(0%))
+
+.tride-tour
+	color: #FFF 
+	background: $blue 
+	text-align: center
+	.title 
+		color: #FFF 
+	.button 
+		text-align: center
+		padding-bottom: 1rem
+		.btn 
+			border: 2px solid #FFF 
+			color: #FFF 
+			padding-left: 2em
+			padding-right: 2em
+.vac-list-slider
+	border-bottom: 1px solid #CDCDCD
+	padding-bottom: 3em
+	.list-slider 
+		.owl-buttons
+			bottom: 108px
+			@media (max-width: 768px) 
+				display: none
+			.owl-prev
+				@extend .icons-reviews-slider-move-left
+				left: -3em
+				@media (max-width: $site-width) 
+					left: -1em
+				&:hover
+					@extend .icons-reviews-slider-move-left-on
+			.owl-next
+				@extend .icons-reviews-slider-move-right
+				right: -3em
+				@media (max-width: $site-width) 
+					right: -1em
+				&:hover
+					@extend .icons-reviews-slider-move-right-on
+		.owl-pagination
+			bottom: -2em
+			.owl-page
+				margin-right: 2em
+		.owl-item 
+			padding: 0 2px
+		.item 
+			@extend %vac-list-item-style

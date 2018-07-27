@@ -1,0 +1,867 @@
+.header .level-1 .container .menu .nks_topmenu {
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+.header .level-1 .container .menu .nks_topmenu li a {
+  color: #9a9a9a;
+  display: block;
+  font-size: 16px;
+  padding: 2em 1em;
+}
+.header .level-1 .container .menu .nks_topmenu li {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.header .level-1 .container .menu .nks_topmenu li {
+  float: left;
+}
+.header .level-1 .container .menu .hidden-search .btn{
+  line-height: 24px;
+}
+.page-one-specs .doctor-card .container .grid .info .level-1 .spez ul li a{
+  color: #9a9a9a;
+}
+.page-one-specs .doctor-card .container .grid .info .level-1 .spez ul li:hover a{
+  color: #fff;
+}
+.more-info > p {
+  white-space: nowrap;
+}
+iframe{
+  max-width: 100%;
+}
+.page-one-specs .about-doctor .hidden-blocks-slider .item .list .element div:nth-child(1){
+  width: 22%;
+}
+.page-one-specs .about-doctor .hidden-blocks-slider .item .list .element div:nth-child(2){
+  margin-left: 1%;
+  width: 77%;
+}
+.price-block .container .block-head .tabs ul li:first-child, .info-text-block .tabs ul li:first-child, .page-all-reviews .reviews-list .tabs ul li:first-child,
+.price-block .tabs ul li:first-child{
+  border-top-left-radius: 1.5rem !important;
+  border-bottom-left-radius: 1.5rem !important;
+}
+.price-block .container .block-head .tabs ul li:last-child, .info-text-block .tabs ul li:last-child, .page-all-reviews .reviews-list .tabs ul li:last-child,
+.price-block .tabs ul li:last-child{
+  border-top-right-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important;
+}
+.services > .list{
+  display: none;
+}
+.services > div:first-child{
+  display: block;
+}
+#tmp_butt{
+  position: fixed;
+  height: 30px;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+  background: #0090FF;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.modal-window#feedback-form-place {
+  width: 473.6px;
+}
+@media (max-width: 473.6px) {
+  .modal-window#feedback-form-place {
+    width: calc(100% - 1rem);
+  }
+}
+.modal-window#feedback-form-place .form-place .group .cell {
+  width: 100%;
+}
+.modal-window#feedback-form-place .form-place .group .cell:nth-child(2) {
+  width: 49%;
+  margin-right: 2%;
+}
+.modal-window#feedback-form-place .form-place .group .cell:nth-child(3) {
+  width: 49%;
+}
+@media (max-width: 420px) {
+  .modal-window#feedback-form-place .form-place .group .cell {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+.mb1{
+  margin-bottom: 1em;
+}
+.ajax_res{
+  font-size: 16px;
+  margin-bottom: 1em;
+  display: none;
+}
+.ajax_res select{
+  cursor: pointer;
+  position: relative;
+}
+.ajax_res select::after{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 8px;
+  height: 4px;
+  content: "";
+  background: url("/local/templates/nuvmed/project/images/icons-s604b97e14b.png");
+  background-position: -9px -19px;
+}
+@media (max-width: 344px) {
+  .page-one-specs .certificates .level-0 .certificates-slider-one .owl-pagination {
+    bottom: -3em;
+  }
+  .page-one-specs .certificates .level-0 .certificates-slider-one .owl-pagination .owl-page.floatleft {
+    float: left;
+    margin: 5px 0;
+    width: 20%;
+  }
+  .owl-pagination div:nth-child(5n+1) {
+    clear: both;
+  }
+  .page-one-specs .certificates{
+    padding-bottom: 3.5em;
+  }
+  .doctors-block .grid .cell-10 .doctors-slider{
+    padding-bottom: 3.5em;
+  }
+}
+.price_discl {
+  font-size: 14px;
+  margin: 20px 0;
+  text-align: center;
+}
+.doctors-slider a.item  {
+  color: #666666;
+  display: block;
+}
+input{
+  font-family: "ProximaNova-Regular";
+}
+/* ::-webkit-input-placeholder{color: red !important;}
+::-moz-input-placeholder{color: red !important;}
+:-moz-input-placeholder{color: red !important;}
+:-ms-input-placeholder {color: red !important;} */
+.input_error{
+  border-color: red !important;
+}
+.input_error::-webkit-input-placeholder{color: red !important;}
+.input_error::-moz-input-placeholder{color: red !important;}
+.input_error:-moz-input-placeholder{color: red !important;}
+.input_error:-ms-input-placeholder{color: red !important;}
+.messagesInfo {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.doctors-block .grid .cell-10 .doctors-slider .item .adress, 
+.doctors-list .container .place .item .adress, 
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list .item .adress{
+  white-space: nowrap;
+}
+@media (max-width: 940px) {
+  .more-info > p{
+    white-space: normal;
+  }
+}
+@media (max-width: 690px) {
+  .page-one-specs .about-doctor .hidden-blocks-slider .item .list .element div:nth-child(1){
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .page-one-specs .about-doctor .hidden-blocks-slider .item .list .element div:nth-child(2){
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.reviews .review-slider .item .group{
+  width: 96%;
+}
+@media (max-width: 504px) {
+  .price-block .container .block-head .tabs ul li{
+    border-radius: 0 !important;
+  }
+}
+.reviews .review-slider .item .group .cell .text{
+  min-height: 77px;
+}
+.review-slider .name > span {
+  display: block;
+  min-height: 41px;
+}
+.reviews .review-slider .item .group .cell .text span{
+  display: none;
+  vertical-align: top;
+}
+.doctors-list .item > a{
+  display: block;
+}
+.result-list .item > a{
+  display: block;
+}
+
+.doctors-list .item .name{
+  color: #666;
+}
+.doctors-block .grid .cell-10 .doctors-slider .item .profession, .doctors-list .container .place .item .profession, .page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list .item .profession{
+  font-size: 12px;
+}
+.page-category-spec .seo-text{
+  margin-top: 41px;
+}
+.page-one-article .text-block h3,
+.service_main_cont h3,
+.seo-text h3,
+.page-one-article .text-block h2,
+.service_main_cont h2,
+.seo-text h2{
+  font-size: 32px;
+  line-height: 1em;
+  margin-bottom: 1em;
+  padding: 1rem;
+  position: relative;
+  text-align: center; 
+}
+.page-one-article .text-block h3::after,
+.service_main_cont h3::after,
+.seo-text h3::after,
+.page-one-article .text-block h2::after,
+.service_main_cont h2::after,
+.seo-text h2::after {
+  background-repeat: no-repeat;
+  background-image: url("../project/images/icons-s3a277e7a38.png");
+  background-position: 0 -18px;
+  height: 10px;
+  width: 143px;
+  bottom: -0.5rem;
+  clear: both;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+.page-one-article .text-block .cell-10 {
+  padding-top: 30px;
+  text-align: left;
+}
+.service_main_cont{
+  margin-top: 41px;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .alphabet .place .list ul li.active_spec {
+  background: #ed2f2f none repeat scroll 0 0;
+  color: #fff;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .alphabet .place .list{
+  height: 649px;
+}
+
+.show-more.an_more,
+.show-more.prog_serv,
+.show-more.ac_more{
+  display: block;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .paginator{
+  width: 765px;
+}
+.page-all-specs .doctors-big-list-block .filter .group .cell:nth-child(1){
+  z-index: 102;
+}
+.page-all-specs .doctors-big-list-block .filter .group .cell:nth-child(2){
+  z-index: 101;
+}
+.page-all-specs .doctors-big-list-block .filter .group .cell:nth-child(3){
+  z-index: 100;
+}
+.profession {
+  margin-bottom: 10px;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.result-list .item .name {
+  color: #666;
+}
+.quote .container .place {
+  color: #303030;
+  font-family: ProximaNova-Light;
+  font-size: 24px;
+  line-height: 1.333em;
+}
+.quote .container .place strong {
+  font-family: ProximaNova-Regular;
+  font-weight: 800;
+}
+hr{
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.seo-text.tc {
+  text-align: center;
+}
+.page-corporative-serv{
+  margin-top: -70px;
+}
+.page-corporative-serv .corporative-serv-head{
+  padding-top: 70px;
+}
+.dark_bg.breadcrumbs ul li a:hover {
+  color: #fff;
+}
+.dark_bg.breadcrumbs ul li:last-child a,
+.dark_bg.breadcrumbs ul li:last-child a {
+  color: #fff;
+}
+/* .timeline .place::before{
+  height: calc(100% - 10px);
+} */
+.price-type-2 .container .show-more-price {
+  text-align: center;
+}
+.price-type-2 .container .show-more-price .btn {
+  border: 1px solid #009a9a;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5em 2em;
+}
+.price-type-2 .list{
+  display: none;
+  overflow: hidden;
+}
+.footer .level-1 .container .adress-place .cell-3.adress div:nth-child(3) {
+  font-family: "ProximaNova-Light";
+  font-size: 12px;
+  font-weight: 200;
+}
+/* #full_service .result-list > div{
+  display: none;
+}
+#full_service .result-list > div:first-child{
+  display: block;
+} */
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list .s-item{
+  display: none;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list .s-item.vis{
+  display: inline-block;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list .s-item.group_0{
+  display: none !important;
+}
+.page-all-specs .doctors-big-list-block .big-list-block .result-block .result-list #zero_res {
+  color: red;
+  display: block !important;
+  font-size: 18px;
+  min-height: 50px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+.price-block .container .search_in_price_wrap::before {
+  clear: both;
+  content: "";
+  display: block;
+  left: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  background-position: -111px -100px;
+  height: 20px;
+  width: 20px;
+  background-image: url("../project/images/icons-sc225c4b938.png");
+  background-repeat: no-repeat;
+}
+.price-block .container .search_in_price_wrap {
+  background: #f5f5f5 none repeat scroll 0 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 6px;
+  position: relative;
+  margin-bottom: -16px;
+  margin-top: 16px;
+}
+.price-block .container .search_in_price_wrap input[type="text"] {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #303030;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 6px;
+  padding-left: 2.5em;
+}
+.notvis{
+  display: none !important;
+}
+/* .price-block .container .services .list > ul > li.open > ul {
+  display: block !important;
+} */
+.doctors-slider .item a{
+  display: block;
+}
+.doctors-slider .item a .name{
+  color: #666;
+}
+.jq-selectbox__dropdown{
+  left: 0 !important;
+  max-width: 200%;
+}
+.page-one-programming .one-programming-head .head .group .cell:nth-child(1) {
+  width: 28%;
+  white-space: nowrap;
+}
+.page-one-programming .one-programming-head .head .group .cell:nth-child(3) {
+  width: 26%;
+}
+.vis_more{
+  display: none;
+}
+.page-all-news .all-news-list .container .list .item.vis_more{
+  display: none;
+}
+#register_to_prog-form-place {
+  width: 400px;
+}
+
+.page-one-programming .one-programming-head .head .group {
+  width: 670px;
+  max-width: 100%;
+}
+.all-programs{
+  margin-bottom: 50px !important;
+}
+.programs-place .item.group_0,
+.skidka-result-place .item.group_0{
+  display: none !important;
+}
+.actions-block .container .slider-actions-block .item .level-2 .points .point span:nth-child(1), 
+.all-skidka .skidka-result-place .item .level-2 .points .point span:nth-child(1){
+  text-transform: none;
+}
+.to-start.art_tostart,
+.to-start.ac_tostart {
+  margin-bottom: 50px;
+}
+
+.page-one-article,
+.page-one-vac,
+.page-one-skidka{
+  margin-top: -70px;
+}
+
+.page-one-skidka .simple-text{
+  margin-bottom: 50px;
+}
+.text-block.block-1 p i{
+  background: none;
+}
+.all-articles-list .search::before{
+  background: none !important;
+}
+
+.show-more.art_more{
+  display: block;
+}
+.page-all-articles .all-articles-list .list .container .list-place .group_0,
+.page-all-articles .all-articles-list .list .container .list-place .vis_more{
+  display: none;
+}
+
+.page-all-specs .page-navigation,
+.page-category-services .page-navigation,
+.page-all-programming .page-navigation,
+.page-all-skidka .page-navigation,
+.page-one-vac .page-navigation,
+.page-about-us .page-navigation,
+.page-all-clinic .page-navigation,
+.page-one-clinic .page-navigation {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.result.res_2,
+.result.res_3{
+  display: none;
+}
+.index-slider-place{
+  transition: background .3s;
+  padding-bottom: 35px;
+}
+.show-more.cl_showmore{
+  display: block;
+}
+.page-main .benefit {
+  padding-bottom: 41px;
+  padding-top: 20px;
+}
+.page-main .specialists{
+  border-bottom: 1px solid #CDCDCD;
+  padding-bottom: 41px;
+}
+.page-main .all-news-slider{
+  padding-top: 20px;
+}
+.page-main .reviews{
+  border-top: 1px solid #CDCDCD;
+  padding-bottom: 41px;
+}
+.page-main .seo-text{
+  padding-bottom: 41px;
+}
+.tags .tag img{
+  max-width: 20px;
+  border-radius: 50%;
+}
+.service_main_cont i{
+  background: none;
+}
+.w100{
+  width: 100%;
+}
+.show-more.fdb_shomore{
+  display: block;
+}
+.reviews-list .vis_more{
+  display: none !important;
+}
+.show-more.vac_shomore{
+  display: block;
+}
+
+.button input[type="file"]{
+  display: none;
+}
+#loading{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  display: none;
+}
+#loading img{
+  width: 128px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -64px;
+  margin-top: -64px;
+}
+#modal-resume-form h3{
+  text-align: center;
+}
+.res_ul .not_show{
+  display: none !important;
+}
+.original_q, .original_a{
+  display: none;
+}
+.red_select{
+  color: red;
+}
+.page-search .paginator {
+  text-align: center;
+}
+.search-place{
+  
+  margin-bottom: 50px;
+}
+.page-search .paginator .pag .prev,
+.page-search .paginator .pag .next {
+  position: relative;
+}
+.page-search .paginator .pag .prev.disabled,
+.page-search .paginator .pag .next.disabled {
+  display: none;
+}
+.page-search .paginator .pag .next:hover:after,
+.page-search .paginator .pag .next:after,
+.page-search .paginator .pag .prev:hover:after,
+.page-search .paginator .pag .prev:after
+{
+  background-image:url(../project/images/icons-sa5e34cd706.png);
+  background-repeat:no-repeat
+}
+.page-search .paginator .pag .prev::after{
+  background-position: -32px -281px;
+  height: 32px;
+  width: 32px;
+}
+.page-search .paginator .pag .prev::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.page-search .paginator .pag .prev:hover::after{
+  background-position: 0 -281px;
+  height: 32px;
+  width: 32px;
+}
+.page-search .paginator .pag .prev {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 38, ../sass/controller/_mixins.sass */
+.page-search .paginator .pag .prev:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.page-search .paginator .pag .prev a,
+.page-search .paginator .pag .next a{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 310, ../sass/pages/_page_all_specs.sass */
+.page-search .paginator .pag .next {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 38, ../sass/controller/_mixins.sass */
+.page-search .paginator .pag .next:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 319, ../sass/pages/_page_all_specs.sass */
+.page-search .paginator .pag ul {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+/* line 323, ../sass/pages/_page_all_specs.sass */
+.page-search .paginator .pag ul li {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 326, ../sass/pages/_page_all_specs.sass */
+.page-search .paginator .pag ul li a {
+  font-size: 14px;
+  padding: 0 0.5em;
+  color: #9A9A9A;
+}
+/* line 330, ../sass/pages/_page_all_specs.sass */
+.page-search .paginator .pag ul li a.current {
+  color: #DA252F;
+}
+.page-search .paginator .pag .next::after {
+  content: "";
+  display: block;
+  clear: both;
+  background-position: 0 -313px;
+  height: 32px;
+  width: 32px;
+}
+.page-search .paginator .pag .next:hover::after{
+  background-position: -143px -249px;
+}
+.page-search .search-place .item b{
+  color: red;
+}
+.page-search .search-place .request .paginator{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.page-search .search-place .request .paginator .pag{
+  float: none;
+  text-align: center;
+}
+.bx-core-adm-dialog input[type="text"]{
+  width: 90%;
+}
+.page-one-skidka .reviews{
+  border-bottom: none;
+}
+/* .text-block.block-0{
+  display: block;
+} */
+.info-text-block .tabs ul li:last-child{
+  border-right: 1px solid #009A9A;
+}
+.info-text-block .tabs ul li:nth-child(3){
+  border-radius: 0;
+}
+
+.page-all-programming .benefit,
+.page-all-programming .reviews,
+.page-all-skidka .benefit,
+.page-all-skidka .reviews{
+  border-bottom: none;
+}
+
+.page-one-article .one-article-head {
+  background-position: center top;
+}
+.page-all-reviews .reviews-list .tabs ul li:last-child{
+  border-right: 1px solid #009A9A;
+}
+.reviews .review-slider .item {
+  margin-bottom: 5px;
+}
+.rev_txt span{
+  display: none;
+}
+.skidka-result-place .item,
+.service_page .result-list .s-item{
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .set_q .red_select {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 768px) {
+  .page-one-article .one-article-head {
+    padding-top: 4em;
+  }
+  .page-one-vac .one-vac-head {
+    padding-top: 4em;
+  }
+}
+.owl_1,
+.owl_1 li{
+  list-style: none !important;
+  text-align: center;
+}
+.owl_1 a img{
+  max-width: 90%;
+}
+.lic_h1{
+  margin: 30px 0;
+  text-align: center;
+}
+.lic_b{
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+}
+.tride-tour .button .btn:hover{
+  background: #fff;
+  color: #303030;
+}
+.owl-carousel .owl-buttons .owl-next{
+  width: 15px;
+  height: 28px;
+  background-position: -157px -163px;
+}
+.owl-carousel .owl-buttons .owl-next:hover{
+  background-position: -70px -113px;
+}
+.owl-carousel .owl-buttons .owl-prev{
+  width: 15px;
+  height: 28px;
+  background-position: -140px -85px;
+}
+.owl-carousel .owl-buttons .owl-prev:hover{
+  background-position: -147px -191px;
+}
+.owl-carousel .owl-buttons{
+  bottom: 200px;
+}
+.tac img{
+  margin: 30px 5px 20px;
+}
+.page-about-us .reviews,
+.page-about-us .benefit,
+.page-about-us .certificates,
+.page-about-us .place-card{
+  border-bottom: none;
+}
+.page-about-us .page-navigation{
+  margin-bottom: 0;
+}
+.avatar a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-faq .faq .big-list-block .faq-place ul li.vis_more{
+  display: none;
+}
+.page-faq .faq .big-list-block{
+  margin-bottom: 1em;
+}
+.page-faq .faq .big-list-block .faq-place ul li .answer ul li{
+  margin-left: 10px;
+  position: relative;
+}
+.page-faq .faq .big-list-block .faq-place ul li .answer ul li::before{
+  position: absolute;
+  content: "\2022";
+  width: 20px;
+  height: 20px;
+  left: -13px;
+
+}
+.level-1.fixedBlock {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+@media (min-width: 1185px) {
+  .page-main .index-slider-place .index-slider .item .slide .img{
+    max-width: 600px;
+  }
+  .show-more{
+    display: none;
+  }
+  .show-more.service_page{
+    display: none !important;
+  }
+}
+@media (max-width: 1184px) {
+  .pag{
+    display: none;
+  }
+  .page-all-specs .doctors-big-list-block .big-list-block .result-block .paginator{
+    width: auto;
+  }
+}
+
+@media (max-width: 505px) {
+  body .wrapper .container .tabs ul li,
+  body .wrapper .container .tabs ul li:first-child,
+  body .wrapper .container .tabs ul li:last-child, 
+  body .wrapper .container .block-head .tabs ul li,
+  body .wrapper .container .block-head .tabs ul li:first-child,
+  body .wrapper .container .block-head .tabs ul li:last-child{
+    border-radius: 0 !important;
+  }
+  body .wrapper .container .tabs ul li:last-child{
+    border: 0;
+    border-top: 1px solid #009A9A;
+  }
+  body .wrapper .about-doctor .container .tabs ul li:last-child{
+    border: 0;
+  }
+
+}
+@media (max-width: 500px) {
+  .jq-selectbox__dropdown{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 374px) {
+  .tac img{
+    margin: 30px 3px 20px;
+    width: 80px;
+    height: auto;
+  }
+}

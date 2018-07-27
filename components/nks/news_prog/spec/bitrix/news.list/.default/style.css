@@ -1,0 +1,91 @@
+div.spec-list
+{
+	word-wrap: break-word;
+	padding: 0 10px;
+}
+div.spec-list .media-heading a:link,
+div.spec-list .media-heading a:visited
+{
+	font-size: 18px !important;
+	color: #000 !important;
+}
+
+div.spec-list .media-heading{
+	margin-bottom: 10px;
+}
+
+div.spec-list .media-heading h4{
+	margin: 10px 0 0 0 !important;
+}
+
+div.spec-list .media-object
+{
+	margin:5px 10px 0 0;
+	border: 1px solid #16B3C2;
+
+}
+div.spec-list .media
+{
+	margin-bottom: 25px;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+div.spec-list .media img {
+	border: none;
+	margin: 0;
+}
+
+div.spec-list .overlay {
+	display: none;
+  position: absolute;
+  background-color: rgba(61, 70, 96, 0.3);
+}
+
+div.spec-list .priem
+{
+	margin-top:20px;
+}
+
+div.spec-list .priem span
+{
+	font-family: robotobold;
+	color: #ac2428;
+}
+
+div.spec-list .desc
+{
+	margin-top:50px;
+}
+
+div.c-cols .desc{
+	margin-bottom: 15px;
+}
+
+div.spec-list .media .media-left .centr{
+	margin-top: 5px;
+}
+
+div.spec-list .media .media-left .centr a
+{
+    font-size: 15px;
+    color: red !important;
+    margin-top: 5px;
+}
+div.spec-list .media-left{
+	font-size:13px;
+}
+
+.hover-area{
+	cursor: pointer;
+}
+
+.zapis{
+	margin: 0px 0 20px !important;
+}
+
+div.content{
+	margin: 0 10px;
+}

@@ -1,0 +1,132 @@
+.container
+	padding: 0 24px
+	width: $site-width
+	margin: 0 auto
+	position: relative
+	+after
+	+before
+	@media (max-width: $site-width)
+		width: $h
+
+=grid-shift($size)
+	margin-left: ($h / 12) * $size
+
+=grid-cell($items)
+	display: inline-block
+	vertical-align: top
+	font-size: 1rem
+	// padding: 0 1rem
+	+grid($items)
+
+=grid-8-fix
+	@media (max-width: $site-width) 
+		display: block
+		width: calc(768px - 2em) !important
+		margin-left: 0 !important
+		margin: 0 auto !important
+	@media (max-width: 768px) 
+		width: 100% !important
+
+=grid-10-fix
+	@media (max-width: $site-width) 
+		display: block
+		width: calc(768px - 2em) !important
+		margin-left: 0 !important
+		margin: 0 auto !important
+	@media (max-width: 768px) 
+		width: 100% !important
+.grid
+	font-size: 0
+	display: block 
+	width: 100%
+	margin: 0 auto
+	+before
+	+after
+	>.cell-1
+		+grid-cell(1)
+	>.cell-2
+		+grid-cell(2)
+	>.cell-3
+		+grid-cell(3)
+	>.cell-4
+		+grid-cell(4)
+	>.cell-5
+		+grid-cell(5)
+	>.cell-6
+		+grid-cell(6)
+	>.cell-7
+		+grid-cell(7)
+	>.cell-8
+		+grid-cell(8)
+		@media (max-width: $site-width) 
+			display: block
+			width: calc(768px - 2em) !important
+			margin-left: 0 !important
+			margin: 0 auto !important
+		@media (max-width: 768px) 
+			width: 100% !important
+	>.cell-9
+		+grid-cell(9)
+	>.cell-10
+		+grid-cell(10)
+		@media (max-width: $site-width) 
+			display: block
+			width: calc(768px - 2em) !important
+			margin-left: 0 !important
+			margin: 0 auto !important
+		@media (max-width: 768px) 
+			width: 100% !important
+	>.cell-11
+		+grid-cell(11)
+	>.cell-12
+		+grid-cell(12)
+	// сдвиг
+	.shift-1
+		+grid-shift(1)
+	.shift-2
+		+grid-shift(2)
+	.shift-3
+		+grid-shift(3)
+	.shift-4
+		+grid-shift(4)
+	.shift-5
+		+grid-shift(5)
+	.shift-6
+		+grid-shift(6)
+	.shift-7
+		+grid-shift(7)
+	.shift-8
+		+grid-shift(8)
+	.shift-9
+		+grid-shift(9)
+	.shift-10
+		+grid-shift(10)
+	.shift-11
+		+grid-shift(11)
+.grid-mask
+	position: fixed
+	width: 100%
+	margin: 0 auto
+	left: 0
+	right: 0
+	height: 100%
+	z-index: 6
+	@if $show-grid == true
+		display: block 	
+	@else
+		display: none	
+	.container
+		height: 100%
+		// background: rgba(orange, $alpha)
+		.grid
+			height: 100%
+			border-left: cyan 1px solid
+			border-right: cyan 1px solid
+			>div 
+				// +test
+				border-right: cyan 1px solid
+				&:last-child
+					border-right: 0
+				height: 100%
+				color: #FFF
+				padding-top: 2em

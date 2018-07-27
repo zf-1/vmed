@@ -1,0 +1,237 @@
+.page-one-specs
+	.head
+		border-bottom: 1px solid #E6E6E6
+		padding-bottom: 1em
+		.cell-10
+			+cell-reset
+		p 
+			text-align: center
+	.doctor-card
+		.container
+			padding-top: 1rem
+			padding-bottom: 1rem
+			.grid
+				+box-shadow(0px 0px 6px 1px rgba(#7A8D8E, .65))
+				border-radius: 4px
+				overflow: hidden
+				height: 320px
+				@media (max-width: $site-width) 
+					height: auto
+					.image
+						float: left 
+						width: 297px
+						margin-bottom: 2.5em
+					.info
+						width: calc(100% - 297px)
+						float: right
+					.where
+						width: 100%
+						float: right
+
+				@media (max-width: 724px) 
+					
+					// @media (max-width: 666px) 
+					.image
+						max-width: 340px
+						width: 100%
+						margin: 0 auto 
+						display: block
+						float: none
+						margin-bottom: 2.5em
+					.info
+						width: 100%
+						float: none
+					.where
+						padding-top: 0 !important
+						width: 100%
+						float: none
+						padding-left: 2em !important
+				@media (max-width: 840px) 
+					.info 
+						.cell 
+							width: 100% !important
+							text-align: center !important
+							&.skills
+								margin-top: 1rem
+				.image
+					position: relative
+					.img 
+						height: 321px
+						background-size: contain
+						background-position: top center
+						background-repeat: no-repeat
+					.button
+						position: absolute
+						bottom: 1em
+						width: 100%
+						left: 0
+						right: 0
+						text-align: center
+						@media (max-width: $site-width) 
+							bottom: -3em
+						@media (max-width: 724px) 
+							bottom: -3.5em
+						.btn 
+							display: inline-block
+							vertical-align: top
+							font-size: 16px
+							font-weight: 700
+							+proxima-cold-bold
+							padding-left: 1em
+							padding-right: 1em
+				.info
+					padding: 1.5em
+					.level-0
+						.group
+							.cell 
+								&.name 
+									width: 60%
+									div 
+										&:nth-child(1) 
+											font-weight: 700
+											+proxima-cold-bold
+											font-size: 24px
+											margin-bottom: 6px
+										&:nth-child(2) 
+											font-size: 18px
+								&.skills
+									width: 40%
+									text-align: right 
+									.skill 
+										display: inline-block
+										vertical-align: top 
+										div 
+											text-align: center
+											font-size: 14px
+											color: #9A9A9A
+											&:nth-child(1) 
+												margin-bottom: 4px
+												height: 2em
+											&:nth-child(2) 
+												line-height: 14px
+					.level-1
+						padding-top: 1.5em
+						.spez
+						
+							&.main
+								>p 
+									color: #ED2F30
+							>p 
+								+proxima-cold-bold
+								font-size: 16px
+							+ullireset
+							ul 
+								li 
+									font-size: 12px
+									display: inline-block
+									vertical-align: top
+									margin-right: 6px								
+									line-height: 12px
+									padding: .5em 1em
+									border-radius: 1rem
+									border: 1px solid $blue 
+									background: #FFF
+									color: #9A9A9A
+									margin-bottom: .5rem
+									&:hover 
+										background: $blue 
+										color: #FFF
+						.more-info
+							padding-top: 1em
+							+dib
+							p 
+								margin-bottom: 0
+				.where
+					padding: 1.5em 
+					padding-right: .5em
+					+after
+					@media (max-width: $site-width) 
+						padding-left: 2em
+					>p 
+						+proxima-cold-bold
+						font-size: 20px
+						margin-bottom: 1rem
+					a
+						position: relative
+						margin-bottom: 1.5em
+						font-size: 16px
+						line-height: 22px
+						display: block 
+						color: $text 
+						@media (max-width: $site-width) 
+							width: $h / 3
+							float: left 
+							padding-right: 2em
+						@media (max-width: 650px) 
+							width: 50%
+						@media (max-width: 480px) 
+							width: 100%
+							&:nth-child(4) 
+								margin-bottom: 0
+						&:hover
+							color: $blue
+						+before
+							@extend .icons-point
+							position: absolute
+							left: -20px
+							top: 0
+	.about-doctor
+		padding-bottom: 3em
+		padding-top: 1em
+		.grid
+			.cell-10
+				+cell-reset
+		.tabs
+			+ullireset
+			ul 
+				border-bottom: 1px solid #CDCDCD 
+				font-size: 0
+				@media (max-width: $site-width) 
+					text-align: center
+				li 
+					display: inline-block
+					vertical-align: top 
+					font-size: 18px
+					color: #9A9A9A
+					width: $h / 7
+					text-align: center
+					padding: .5em 0
+					cursor: pointer
+					@media (max-width: $site-width) 
+						width: auto 
+						padding-left: .5em 
+						padding-right: .5em 
+					@media (max-width: 700px) 
+						font-size: 14px
+					&.active
+						color: $blue 
+						position: relative
+						+before
+							position: absolute
+							bottom: -2px
+							height: 3px
+							left: 0
+							background: $blue 
+							width: 100%
+		.hidden-blocks-slider
+			.item 
+				&:nth-child(1) 
+					display: block
+				.list 
+					padding-top: 1em
+					.element 
+						+after
+						margin-bottom: 1rem
+						div 
+							float: left 
+							font-size: 15px
+							&:nth-child(1) 
+								+grid(2.4)
+								color: #9A9A9A
+								@media (max-width: 645px) 
+									+grid(6)
+							&:nth-child(2) 
+								+grid(12 - 2.4)
+								color: #303030
+								@media (max-width: 645px) 
+									+grid(6)

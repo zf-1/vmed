@@ -1,0 +1,40 @@
+$dir: "../images/";
+$test: false;
+$show-grid: true;
+$show-grid: false;
+$site-width: 1184px;
+$site-font-size: 16px;
+$site-line-height: 20px;
+$h: 100%;
+
+$main-bg: #FFF;
+// $main-bg: shade(#FFF, 66);
+
+$red: #B22F2F;
+$red2: #DA252F;
+$green: #6FE420;
+$brown: #FF8900;
+$blue: #009A9A;
+$blue-dark: #323845;
+$orange: #FF6600;
+$yellow: #FF991E;
+
+$purple: #6F4A95;
+
+$border-orange: #EB7000;
+
+$footer: #3C4149;
+
+$black: #04060A;
+$gray: #333333;
+$gray2: #2A2A2A;
+$text: #666666;
+$blue-text: $blue;
+$text2: #2C302E;
+$title: $gray;
+$link: $blue;
+$border: #E7E7E7;
+$subtext: shade($text, 75);
+$placeholder: #000;
+
+$alpha: .333;

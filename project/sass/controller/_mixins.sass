@@ -1,0 +1,264 @@
+=font($font, $weight)
+	@font-face
+		$path: "../fonts/"
+		font-family: $font
+		src: url($path + $font + ".eot?23123")
+		src: local("☺"), url($path + $font + ".eot?23123#iefix") format("embedded-opentype"), url($path + $font + ".woff?23123") format("woff"), url($path + $font + ".ttf?23123") format("truetype")
+		font-weight: $weight
+		font-style: normal
+
+=proxima-light
+	font-family: "ProximaNova-Light"
+
+=proxima-reg
+	font-family: "ProximaNova-Regular"
+
+=proxima-cold-bold
+	font-family: "ProximaNovaCond-Bold"
+
+=proxima-cold-semibold
+	font-family: "mark_simonson_-_proxima_nova_condensed_semibold-webfont"
+
+=proxima-bold
+	font-family: "mark_simonson_-_proxima_nova_bold-webfont"
+
+=absoluteLink
+	>a
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		position: absolute
+		border-bottom: 0
+=dib
+	i, strong, span
+		display: inline-block
+		vertical-align: middle
+=after
+	&:after
+		content: ''
+		display: block
+		clear: both
+		@content
+
+=before
+	&:before
+		content: ''
+		display: block
+		clear: both
+		@content
+
+=test
+	&:nth-child(even)
+		background: rgba(purple, $alpha)
+	&:nth-child(odd)
+		background: rgba(green, $alpha)
+
+=absoluteReset
+	display: block !important
+	position: relative !important
+	top: auto !important
+	left: auto !important
+	right: auto !important
+	bottom: auto !important
+
+=absoluteCenter
+	left: 0
+	right: 0
+	margin: 0 auto
+	position: absolute
+
+=img($height)
+	>.img
+		background-repeat: no-repeat
+		background-size: cover
+		width: 100%
+		background-position: center
+		height: $height
+		position: relative
+		+absoluteLink
+
+=hoverOpacity($opacity, $time)
+	opacity: 1
+	+single-transition(opacity, $time)
+	&:hover
+		opacity: $opacity
+
+=label
+	label
+		position: relative
+		display: block
+		margin-bottom: .5em
+		span
+			padding-left: 1.5em
+			font-weight: 400
+			color: #000
+			display: block
+			i 
+				margin-right: .333em
+		.iradio_minimal-red
+			position: absolute !important
+			left: 0
+			top: 0
+
+=ullireset
+	ul 
+		padding: 0
+		margin: 0 
+		li 
+			list-style: none
+			margin: 0 
+			padding: 0
+
+=stars 
+	margin-left: 10px
+	background: url($dir + "icons/stars-empty.png")
+	height: 12px
+	width: 74px
+	display: inline-block
+	vertical-align: middle
+	@include after
+	>span 
+		@extend .icons-stars-full
+		float: left
+		display: block
+		
+=grid($size)
+	width: ($h / 12) * $size
+
+=grid-fix($size)
+	width: ($site-width / 12) * $size
+=cond
+	font-family: 'Open Sans Condensed'
+
+=module-title
+	>h3, >h2, >h1, >h4
+		text-align: center
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 700
+	>p, >.subtitle
+		font-size: 20px 
+		line-height: 22px
+		text-align: center
+		margin-bottom: 1.5em
+
+=top-purple-block
+	.part-0 
+		.grid
+			.cell-5
+				padding-top: 1.5em
+				@media (max-width: $site-width) 
+					width: 100%
+					text-align: center
+				@media (max-width: 768px) 
+					padding-top: 3em
+				img 
+					font-size: 0
+					display: block
+					@media (max-width: $site-width) 
+						display: inline-block
+						vertical-align: middle
+			.cell-7
+				padding-top: 4.5em
+				@media (max-width: $site-width) 
+					width: 100%
+					text-align: center
+					padding-bottom: 2rem
+					padding-top: 1rem
+				h1 
+					color: #FFF
+					div 	
+						text-transform: uppercase
+						&:nth-child(1) 
+							font-weight: 800
+							font-size: 36px
+							margin-bottom: 1rem
+						&:nth-child(2) 
+							font-weight: 800
+							font-size: 26px
+=cell-reset
+	@media (max-width: $site-width) 
+		width: $h 
+		margin-left: 0
+=filter-navigation
+	.show-more
+		width: 465px
+		margin: 0 auto 1.5em
+		@media (max-width: 500px) 
+			width: 100%
+		.button 
+			font-weight: 700
+			text-align: center
+			width: 100%
+			padding: .5em
+			border-radius: 1em
+			border: 2px solid $red2
+			color: #2F2F2F
+			text-align: center
+			cursor: pointer
+			+transition(.6s)
+			&:hover 
+				color: #FFF
+				background: $red2
+	.paginator
+		width: 465px
+		margin: 0 auto
+		@media (max-width: 500px) 
+			width: 100%
+		+after
+		.to-start
+			float: left 
+			span 
+				padding: .5em 1em
+				color: #9A9A9A
+				border: 1px solid #CDCDCD
+				border-radius: 1.5em
+				text-align: center
+				cursor: pointer
+				+transition(.6s)
+				&:hover 
+					color: tint(#9A9A9A, 6)
+					background: shade(#FFF, 6)
+		.pag 
+			float: right 
+			+ullireset
+			@media (max-width: $site-width) 
+				display: none
+			.prev
+				display: inline-block
+				vertical-align: middle
+				cursor: pointer
+				+after
+					@extend .icons-red-prev
+				&:hover
+					&:after
+						@extend .icons-red-prev-on
+			.next
+				display: inline-block
+				vertical-align: middle
+				cursor: pointer
+				+after
+					@extend .icons-red-next
+				&:hover
+					&:after
+						@extend .icons-red-next-on
+			ul 
+				display: inline-block
+				vertical-align: middle
+				font-size: 0
+				li 	
+					vertical-align: middle 
+					display: inline-block
+					a 
+						font-size: 14px
+						padding: 0 .5em
+						color: #9A9A9A
+						&.current
+							color: $red2
+=show-more-style
+	span, a 
+		font-size: 12px
+		color: #9A9A9A 
+		border-bottom: 1px dotted 
+		line-height: 1em

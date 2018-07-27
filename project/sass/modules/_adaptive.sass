@@ -1,0 +1,140 @@
+#wpadminbar
+	&.mobile
+		display: none !important 
+.wrapper
+	@media (max-width: $site-width) 
+		padding-top: 48px
+.fixed-adaptive-block
+	display: none
+	@media (max-width: $site-width) 
+		display: block 
+	position: fixed 
+	background: #FFF
+	top: 0
+	left: 0
+	right: 0
+	+after
+	color: #FFF
+	z-index: 108
+	+box-shadow(0px 1px 10px 0px rgba(#000, .2))
+	.logo 
+		float: left 
+		padding-left: 1em
+		padding-top: 5px
+		img 
+			max-height: 39px
+	.right 
+		font-size: 0
+		.search
+			display: inline-block
+			vertical-align: middle
+			i 
+				margin-right: 1rem
+		.sandwich 
+			display: inline-block
+			vertical-align: middle
+			&.open 
+				.icons-sandwich
+					@extend .icons-sandwich-close
+.sandwich-menue
+	position: fixed 
+	overflow-y: scroll
+	right: -108em
+	top: 48px
+	z-index: 103
+	// max-width: 320px
+	width: 100%
+	background: #FFF
+	+box-shadow(0px 1px 10px 0px rgba(#000, .2))
+	display: none
+	+single-transition(right, .333s)
+	@media (max-width: $site-width) 
+		display: block 
+	&.open 
+		right: 0
+	.search
+		background: #F5F5F5
+		position: relative
+		border-bottom: 1px solid #E6E6E6
+		+before
+			position: absolute
+			left: .5em 
+			top: .5em
+			@extend .icons-price-search
+		input[type=text]
+			border-top: 0
+			background: none
+			border: none
+			color: #000
+			font-size: 15px
+			padding-left: 2.5em
+			padding-top: 6px
+			+input-placeholder
+				font-size: 15px
+				color: #000
+	+ullireset
+	>ul 
+		>li 
+			display: block 
+			a 
+				+transition(0)
+			&.has-children
+				a
+					+after
+						position: absolute
+						@extend .icons-sandwich-arrow-right
+						right: 1em
+						top: 1em					
+			>a 
+				display: block 
+				padding: 1em
+				color: $text
+				position: relative
+
+			>ul 
+				display: none
+				>li 
+					>a 
+						display: block
+						font-size: 14px
+						color: #303030
+						padding: .5em
+						padding-left: 2em
+						background: #E6F5F5
+					&:hover
+						>a 
+							background: tint(#E6F5F5, 85)
+			&.active
+				>a 
+					background: #ED2F2F 
+					color: #FFF 
+					&:after
+						@extend .icons-sandwich-arrow-down
+						top: 1.5em
+				>ul 
+					display: block
+			&:hover
+				>a 
+					background: tint(#ED2F2F, 85)
+	.phone-block
+		border-top: 1px solid #AEE6E6
+		padding: 1em
+		.phone 
+			font-weight: 700
+			font-size: 24px
+			color: #000
+			text-align: center
+			margin-bottom: .5rem
+			+proxima-cold-bold
+			a 
+				color: #000
+		.button
+			text-align: center 
+			.btn 
+				+dib 
+				display: inline-block
+				border-color: #D7292E
+				color: rgba(#000, .5)
+				padding-left: 1em
+				padding-right: 1em
+				font-size: 16px

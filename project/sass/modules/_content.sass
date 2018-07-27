@@ -1,0 +1,142 @@
+.content
+	color: $text
+	.container
+		border: 1px solid #E7E7E7 
+		margin-top: 2em
+		margin-bottom: 2em
+		padding: 2em 2em
+	.column-left
+		float: left 
+		width: $h / 4
+	.column-right
+		padding-left: 2em
+		float: left 
+		width: $h - $h / 4
+	@media (max-width: $site-width)
+		padding: 1em
+	h1
+		font-size: 30px
+		font-weight: 600
+	h2 
+		font-size: 24px
+		font-weight: 600
+	h3 
+		font-size: 20px
+		font-size: 600
+	h4 
+		font-size: 18px
+		font-weight: 600
+	.text 
+		p 
+			font-size: 16px
+			line-height: 20px
+	a 
+		text-decoration: underline
+		color: $red
+	.subtitle
+		margin-top: -.5em
+		font-size: .9em
+		color: $gray
+		margin-bottom: 1em
+		p
+			margin-bottom: .5em
+	.page-image
+		max-width: 33%
+		float: left
+		margin-right: 1em
+		margin-bottom: 1em
+		@media (max-width: $site-width)
+			width: $h
+			margin: 0 0 1em
+	ul, ol
+		margin-bottom: 1em
+		padding-left: 1.333em
+		li 
+			padding-left: 0em
+			font-weight: 400
+			&:after, &:before
+				display: none
+	ol 
+		margin-bottom: 1em
+		li 
+			margin-bottom: .5em
+	table 
+		margin: 0 auto 1em
+		width: 100%
+		tbody
+			width: 100%
+		tr 
+			width: 100%
+			&:nth-child(odd) 
+				background: #F0F0F0
+			&:nth-child(even) 
+				background: #FFF
+			th 
+				background: $red
+				padding: .5em
+				color: #FFF
+				text-transform: uppercase
+				font-weight: 600
+			td 
+				padding: .5em
+			@media (max-width: 600px)
+				th, td 
+					// display: block 
+					// width: 100% !important
+		&.text-center
+			th, td 
+				text-align: center
+	&.news 
+		.breadcrumbs 
+			padding-bottom: 1em
+		.group
+			.cell 
+				+after
+				margin-bottom: 2em
+				@media (max-width: 1000px) 
+					width: 100%
+				.row 
+					float: left 
+					+img(14em)
+					.img 
+						border-radius: .5em
+						+hoverOpacity(.8,.6s)
+					&:nth-child(1) 
+						width: $h / 3
+					&:nth-child(2) 
+						width: $h - $h / 3
+						padding-left: 1em
+					@media (max-width: 450px) 
+						width: 100% !important
+						padding: 0 !important
+						&:nth-child(1) 
+							padding-bottom: .5em !important
+					a 
+						text-decoration: none
+					.title 
+						font-size: 1.3em
+						font-weight: 600
+					.date 
+						// padding-bottom: .5em
+					.description
+						padding: 1em 0
+						a 
+							color: $text 
+.news-inner
+	.date 
+		color: $gray 
+		padding-bottom: 1em
+		margin-top: -.5em
+	.photo
+		.level-0
+			+img(15em)
+		.level-1
+			+after
+			+img(7.5em)
+			.img 
+				width: $h / 3 - 6
+				float: left 
+				margin-right: 8%
+				&:last-child
+					margin-right: 0
+

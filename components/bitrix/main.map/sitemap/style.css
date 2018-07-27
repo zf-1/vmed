@@ -1,0 +1,24 @@
+ul.map-level-0 a {
+	font-weight: bold;
+	font-size: 14px;
+}
+ul.map-level-0 li{
+	line-height: 24px;
+}
+ul.map-level-1 a, ul.map-level-2 a, ul.map-level-3 a {
+	font-weight: normal;
+}
+.map-columns{
+	width: 100%;
+}
+.map-columns td {
+	vertical-align: top;
+	width: 50%;
+}
+
+.htmlMapHead {
+  color: #e32223;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

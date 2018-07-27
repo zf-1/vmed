@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>veramed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="../css/style.min.css">
+
+	<link rel="stylesheet" href="../js/lib/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="../js/lib/owl-carousel/owl.transitions.css">
+
+	<script src="../js/lib/jquery-1.12.4.min.js"></script>
+
+	<script src="../js/lib/owl-carousel/owl.carousel.min.js"></script>
+
+	<script src="../js/lib/ui/jquery-ui.min.js"></script>
+	<script src="../js/lib/icheck.min.js"></script>
+	<script type="text/javascript" src="../js/lib/fancybox/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/lib/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+	
+	<script src="../js/lib/jquery.validate.min.js"></script>
+	<script src="../js/lib/jquery.maskedinput.min.js"></script>
+
+	<script src="../js/fvalid.js"></script>
+	<script src="../js/forms.js"></script>
+	<script src="../js/main.min.js"></script>
+</head>
+<body>
+	<div class="darkness"></div>
+	<div class="grid-mask">
+		<div class="container">
+			<div class="grid">
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+				<div class="cell-1"></div>
+			</div>
+		</div>
+	</div>
+	<div class="fixed-adaptive-block">
+		<div class="logo">
+			<a href="/"><i class="icons-adapt-logo"></i></a>
+		</div>
+		<div class="right">
+			<div class="sandwich">
+				<i class="icons-sandwich"></i>
+			</div>
+		</div>
+	</div>
+
+	<div id="callback-form-place" class="modal-window">
+		<i class="icons-close"></i>
+		<div class="title-form">
+			<div>Заказать обратный звонок</div>
+		</div>
+		<div class="form-place">
+			<form id="modal-callback-form" novalidate="novalidate">
+				<input type="hidden" name="form-title" value="Обратный звонок">
+				<div class="field-name">
+					<input type="text" placeholder="Ваше имя" name="name">
+				</div>
+				<div class="field-phone">
+					<input type="text" placeholder="Ваш телефон" class="phone" name="phone">
+				</div>      
+				<div class="field-comment">
+					<textarea name="comment" placeholder="Комментарий" class="valid"></textarea>
+				</div>
+				<div class="submit">
+					<div class="btn">Отправить</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="register-form-place" class="modal-window">
+		<i class="icons-close"></i>
+		<div class="title-form">
+			<div>Записаться на прием</div>
+		</div>
+		<div class="form-place">
+			<form id="modal-register-form" novalidate="novalidate">
+				<input type="hidden" name="form-title" value="Обратный звонок">
+				<div class="group">
+					<div class="cell">
+						<input type="text" placeholder="ФИО" name="name">
+					</div>
+					<div class="cell">
+						<input type="text" placeholder="Контактный телефон" class="phone" name="phone">
+					</div>
+					<div class="cell">
+						<input type="text" placeholder="Электронная почта" class="phone" name="phone">
+					</div>
+					<div class="cell">
+						<select name="">
+							<option value="г. Одинцово, ул. Говорова, 18/1">г. Одинцово, ул. Говорова, 18/1</option>
+							<option value="г. Одинцово, б-р. Любы Новоселовой, д. 17">г. Одинцово, б-р. Любы Новоселовой, д. 17</option>
+							<option value="г. Звенигород, ул. Московская, д. 12">г. Звенигород, ул. Московская, д. 12</option>
+							<option value="Не определился">Не определился</option>
+						</select>
+					</div>
+					<div class="cell">
+						<textarea name="comment" placeholder="Повод обращения" class="valid"></textarea>
+					</div>
+				</div>	
+				<div class="submit">
+					<div class="btn">Отправить</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="sandwich-menue">	
+		<div class="search">
+			<input type="text" placeholder="Поиск">
+		</div>
+		<ul>
+			<li>
+				<a href="#">Услуги</a>
+				<ul>
+					<li><a href="#">Все услуги</a></li>
+					<li><a href="#">Анабиоз</a></li>
+					<li><a href="#">Хирургия</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Врачи</a></li>
+			<li><a href="#">Программы</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">Цены</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="phone-block">
+			<div class="phone">8 495 150-03-03</div>
+			<div class="button">
+				<div class="btn"><i class="icons-red-phone"></i><span>Обратный звонок</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="header">
+			<div class="level-0">
+				<div class="container">
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Помощь</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="level-1">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-2 logo">
+							<a href="/"><i class="icons-main-logo"></i></a>
+						</div>
+						<div class="cell-8 menu">
+							<div class="hidden-search">
+								<input type="text" placeholder="Поиск...">
+								<div class="btn red">Искать</div>
+							</div>
+							<div class="search">
+								<i class="icons-search"></i><span>Поиск</span>
+							</div>
+							<ul>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Цены</a></li>
+								<li class="active"><a href="#">Врачи</a></li>
+								<li><a href="#">Программы</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="cell-2 phone">
+							<div>
+								<a href="tel:8465150-03-03">8 495 150-03-03</a>
+							</div>
+							<div>
+								<a href="#" class="get-callback"><i class="icons-menu-callback"></i><span>Обратный звонок</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /// -->
+		<div class="page-one-specs">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul>
+						<li><a href="#">ВераМед</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Хирурги</a></li>
+						<li><a href="#">Воропанова Е.Б.</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="head">
+				<div class="container">
+					<h1 class="title">Константинопольский К.К.</h1>
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<p>Платные медицинские услуги медцентра Верамед. Наш принцип — изо всех возможных методов лечения выбрать для пациента именно тот, который даст максимальную пользу.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="doctor-card">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-3 image">
+							<div class="img" style="background-image: url(../images/other/doctor-demo.jpg);"></div>
+							<div class="button">
+								<div class="btn blue get-register">Записаться на прием</div>
+							</div>
+						</div>
+						<div class="cell-6 info">
+							<div class="level-0">
+								<div class="group">
+									<div class="cell name">
+										<div>Константинопольский</div>
+										<div>Константин Константинович</div>
+									</div>
+									<div class="cell skills">
+										<div class="skill">
+											<div>
+												<i class="icons-doctor-1"></i>
+											</div>
+											<div>Прием <br>взрослых</div>
+										</div>
+										<div class="skill">
+											<div>
+												<i class="icons-doctor-2"></i>
+											</div>
+											<div>Прием детей <br>с 0 лет</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="level-1">
+								<div class="spez main">
+									<p>Основная специализация: </p>
+									<ul>
+										<li>Акушер-гинеколог</li>
+										<li>Уролог</li>
+										<li>Перинаталог</li>
+										<li>Иглорефлексотерапевт</li>
+									</ul>
+								</div>
+								<div class="spez">
+									<p>Дополнительная специализация: </p>
+									<ul>
+										<li>Акушер-гинеколог</li>
+										<li>Уролог</li>
+										<li>Перинаталог</li>
+									</ul>
+								</div>
+								<div class="more-info">
+									<p>
+										<strong>Общий медицинский стаж:</strong>
+										<span>с 1996 ( 21 лет)</span>
+									</p>
+									<p>
+										<strong>Ученая степень/категория:</strong>
+										<span>Кандидат медицинских наук</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="cell-3 where">
+							<p>Где ведет прием:</p>
+							<a href="#">ВЕРАМЕД Одинцово, <br>г. Одинцово, ул. Говорова, 18/1</a>
+							<a href="#">ВЕРАМЕД Премиум, <br>г. Одинцово, б-р Любы <br>Новоселовой, 17</a>
+							<a href="#">ВЕРАМЕД Звенигород <br>г. Звенигород, ул. Московская, 12</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="about-doctor">
+				<div class="container">
+					<h2 class="title">О враче</h2>
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<div class="tabs">
+								<ul>
+									<li data-open="0" class="active">Образование</li>
+									<li data-open="1">Достижения</li>
+									<li data-open="2">Курсы</li>
+									<li data-open="3">События</li>
+									<li data-open="4">Статьи</li>
+									<li data-open="5">Ведет прием</li>
+									<li data-open="6">Заболевания</li>
+								</ul>
+							</div>
+							<div class="hidden-blocks-slider" data-current-slide="0">
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Образование</div>
+											<div>Ивановская государственная медицинская академия имени А.С.Бубнова.</div>
+										</div>
+										<div class="element">
+											<div>Специальность:</div>
+											<div>«Лечебное дело».</div>
+										</div>
+										<div class="element">
+											<div>Ординатура:</div>
+											<div>1991-1992 гг. — интернатура по терапии на базе Центральной районной больницы города Иваново.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="list">
+										<div class="element">
+											<div>Достижения</div>
+											<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis.</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="certificates">
+				<h2 class="title">Сертификаты</h2>
+				<div class="level-0">
+					<div class="container">
+						<div class="certificates-slider-one">
+							<div class="item">
+								<img src="../images/other/sert-1.jpg">
+							</div>
+							<div class="item">
+								<img src="../images/other/vert-sert.jpeg">
+							</div>
+							<div class="item">
+								<img src="../images/other/sert-1.jpg">
+							</div>
+							<div class="item">
+								<img src="../images/other/vert-sert-2.jpeg">
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- / -->
+			<div class="reviews">
+				<h2 class="title">Отзывы</h2>
+				<div class="container">
+					<div class="review-slider">
+						<div class="item">
+							<div class="group">
+								<div class="cell">
+									<div class="date">28 августа 2016, 16:42</div>
+									<div class="tags">
+										<ul>
+											<li>Клиника в Одинцова</li>
+											<li>Уролог</li>
+											<li>Врач - Артюхов C.А.</li>
+											<li>Урологические заболевания</li>
+										</ul>
+									</div>
+									<div class="text">
+										Уравнение малых колебаний относительно. Силовой трёхосный гироскопический стабилизатор стабилен. Точность крена позволяет исключить из рассмотрения лазерный ротор. Управление полётом самолёта активно...
+									</div>
+									<div class="show-more">
+										<a href="#">Подробнее</a>
+									</div>
+								</div>
+								<div class="cell">
+									<div class="section">
+										<div class="sec-title">
+											Клиент:
+										</div>
+										<div class="name">
+											<span><b>Коклюшевский</b> Константин Константинович</span>
+										</div>
+									</div>
+									<div class="section client">
+										<div class="sec-title">Отзыв врачу:</div>
+										<div class="name">
+											<div class="avatar" style="background-image: url(../images/other/avatar.jpg);"></div>
+											<span><b>Сальникова</b> Ирина Александровна</span>
+										</div>
+									</div>
+									<div class="all">
+										<a href="#">Все отзывы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="group">
+								<div class="cell">
+									<div class="date">28 августа 2016, 16:42</div>
+									<div class="tags">
+										<ul>
+											<li>Клиника в Одинцова</li>
+											<li>Уролог</li>
+											<li>Врач - Артюхов C.А.</li>
+											<li>Урологические заболевания</li>
+										</ul>
+									</div>
+									<div class="text">
+										Уравнение малых колебаний относительно. Силовой трёхосный гироскопический стабилизатор стабилен. Точность крена позволяет исключить из рассмотрения лазерный ротор. Управление полётом самолёта активно...
+									</div>
+									<div class="show-more">
+										<a href="#">Подробнее</a>
+									</div>
+								</div>
+								<div class="cell">
+									<div class="section">
+										<div class="sec-title">
+											Клиент:
+										</div>
+										<div class="name">
+											<span><b>Коклюшевский</b> Константин Константинович</span>
+										</div>
+									</div>
+									<div class="section client">
+										<div class="sec-title">Отзыв врачу:</div>
+										<div class="name">
+											<div class="avatar" style="background-image: url(../images/other/avatar.jpg);"></div>
+											<span><b>Сальникова</b> Ирина Александровна</span>
+										</div>
+									</div>
+									<div class="all">
+										<a href="#">Все отзывы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="group">
+								<div class="cell">
+									<div class="date">28 августа 2016, 16:42</div>
+									<div class="tags">
+										<ul>
+											<li>Клиника в Одинцова</li>
+											<li>Уролог</li>
+											<li>Врач - Артюхов C.А.</li>
+											<li>Урологические заболевания</li>
+										</ul>
+									</div>
+									<div class="text">
+										Уравнение малых колебаний относительно. Силовой трёхосный гироскопический стабилизатор стабилен. Точность крена позволяет исключить из рассмотрения лазерный ротор. Управление полётом самолёта активно...
+									</div>
+									<div class="show-more">
+										<a href="#">Подробнее</a>
+									</div>
+								</div>
+								<div class="cell">
+									<div class="section">
+										<div class="sec-title">
+											Клиент:
+										</div>
+										<div class="name">
+											<span><b>Коклюшевский</b> Константин Константинович</span>
+										</div>
+									</div>
+									<div class="section client">
+										<div class="sec-title">Отзыв врачу:</div>
+										<div class="name">
+											<div class="avatar" style="background-image: url(../images/other/avatar.jpg);"></div>
+											<span><b>Сальникова</b> Ирина Александровна</span>
+										</div>
+									</div>
+									<div class="all">
+										<a href="#">Все отзывы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="price-block">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<div class="block-head">
+								<h2 class="title">Прайс на услуги</h2>
+								<p>Вы можете использовать поиск, для того, чтобы найти что-либо на нашем сайт, что вам очень пригодится. Мы рады вам помочь найти, что угодно, чтобы вы были рад.</p>
+								<div class="tabs">
+									<ul>
+										<li class="active">Верамед Одинцово</li>
+										<li>Верамед Премиум</li>
+										<li>Верамед Звенигород</li>
+									</ul>
+								</div>
+							</div>
+							<div class="services">
+								<div class="search">
+									<input type="text" placeholder="Поиск услуг в прайсе">
+								</div>
+								<div class="list">
+									<ul>
+										<li>
+											<div><span>Аллергология</span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div><span>Аппаратная коррекция функциональных расстройств ЦНС </span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div><span>Вакцинация</span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div>
+												<span>Анализы</span>
+												<span class="count">Всего услуг: <b>18</b></span>
+											</div>
+											<ul>
+												<li>
+													<span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span>
+													<span>1400 Р</span>
+												</li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div><span>Гирудотерапия</span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div><span>Гомеопатия</span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div><span>Экзамен</span></div>
+											<ul>
+												<li><span>Вакуумное лигирование геморроидального узла латексным кольцом (1узел)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li><span>Вскрытие абсцесса острого воспаления эпителиального копчикового хода</span><span>1400 Р</span></li>
+												<li><span>Обработка анальной трещины (радиоволновым методом, лазером)</span><span>1400 Р</span></li>
+												<li class="more">
+													Показать еще 3 позиции
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="show-more">
+									<div class="btn">Показать ещё 10 услуг</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="doctors-block">
+				<div class="container">
+					<h2 class="title">Прием ведут</h2>
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<div class="doctors-slider">
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-1.jpg);"></div>
+									<div class="profession">Акушер-гинеколог, перинатолог</div>
+									<div class="name">
+										<b>Ахмедова</b>
+										<span>Шамала</span>
+										<span>Акаевна</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-2.jpg);"></div>
+									<div class="profession">Аллерголог-Иммунолог</div>
+									<div class="name">
+										<b>Сиротина</b>
+										<span>Алла</span>
+										<span>Юрьевна</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-3.jpg);"></div>
+									<div class="profession">Иглорефлексотерапевт</div>
+									<div class="name">
+										<b>Абасова</b>
+										<span>Аминат</span>
+										<span>Зияудиновна</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-4.jpg);"></div>
+									<div class="profession">Оториноларинголог</div>
+									<div class="name">
+										<b>Аль-Хилали</b>
+										<span>Александр </span>
+										<span>Абдуллаевич</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-3.jpg);"></div>
+									<div class="profession">Иглорефлексотерапевт</div>
+									<div class="name">
+										<b>Абасова</b>
+										<span>Аминат</span>
+										<span>Зияудиновна</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="avatar" style="background-image: url(../images/other/doctor-4.jpg);"></div>
+									<div class="profession">Оториноларинголог</div>
+									<div class="name">
+										<b>Аль-Хилали</b>
+										<span>Александр </span>
+										<span>Абдуллаевич</span>
+									</div>
+									<div class="adress">
+										<span>г. Одинцово,бул ... ( 3 )</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="page-navigation">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<div class="prev">
+								<a href="#">
+									<span>Услуги</span>
+									<b>Вакцинация</b>
+								</a>
+							</div>
+							<div class="next">
+								<a href="#">
+									<span>Услуги</span>
+									<b>Прокачка иммунитета</b>
+								</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<!-- / -->
+			<div class="seo-text">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<h2 class="title">SEO блок с описанием</h2>
+							<p>Таргетирование конструктивно. Абстракционизм, пренебрегая деталями, основательно подпорчен предыдущим опытом применения. Олицетворение, вопреки мнению П.Друкера, перпендикулярно. Очевидно, что анжамбеман текстологически осознаёт глубокий медиаплан. Наряду с нейтральной лексикой баннерная реклама спорадически программирует хорей.</p>
+							<p>Поведенческий таргетинг, вопреки мнению П.Друкера, дает конкурент. После того как тема сформулирована, сервисная стратегия порождена временем. Согласно последним исследованиям, осведомленность о бренде выбирает литературный фирменный стиль. Образ аллитерирует конвергентный парафраз. Рекламное сообщество, без использования формальных признаков поэзии, оправдывает дольник. Такое понимание ситуации восходит к Эл Райс, при этом ударение самопроизвольно. Мифопорождающее текстовое устройство параллельно. В данной работе мы не будем анализировать все эти аспекты, однако спонсорство лабильно.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /// -->
+		<div class="footer">
+			<div class="level-0">
+				<div class="container">
+					<div class="title white">Свяжитесь с нами</div>
+					<div class="grid">
+						<div class="cell-10 shift-1">
+							<p>Воздухосодержание, как следует из вышесказанного, раскручивает комплексный контрпример. Измерение по определению упруго-пластично. Согласно последним исследованиям, выщелачивание притягивает гранулометрический анализ. </p>
+						</div>
+					</div>
+					<div class="form">
+						<form>
+							<div class="group">
+								<div class="cell">
+									<input type="text" name="name" placeholder="Введите ваше имя">
+								</div>
+								<div class="cell">
+									<input type="text" class="phone" name="phone" placeholder="Введите ваш телефон">
+								</div>
+								<div class="cell">
+									<div class="btn">Отправить</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="level-1">
+				<div class="container">
+					<div class="adapt-phone">
+						<div>
+							<a href="tel:8465150-03-03">8 495 150-03-03</a>
+						</div>
+						<div>
+							<a href="#" class="get-callback"><i class="icons-menu-callback"></i><span>Обратный звонок</span></a>
+						</div>
+					</div>
+					<div class="grid menu-place">
+						<div class="cell-2">
+							<ul class="strong">
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Врачи</a></li>
+								<li><a href="#">Программы</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="cell-2">
+							<ul>
+								<li><a href="#">Пациентам</a></li>
+								<li><a href="#">Вопрос врачу</a></li>
+								<li><a href="#">Как стать пациентом?</a></li>
+								<li><a href="#">Справочник заболеваний</a></li>
+								<li><a href="#">Политика конфиденц.</a></li>
+								<li><a href="#">О сайте</a></li>
+								<li><a href="#">Документы</a></li>
+							</ul>
+						</div>
+						<div class="cell-2">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Миссия</a></li>
+								<li><a href="#">История</a></li>
+								<li><a href="#">Пациентам</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Вакансии</a></li>
+							</ul>
+						</div>
+						<div class="cell-2">
+							<ul>
+								<li><a href="#">Пресс центр</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Статьи</a></li>
+								<li><a href="#">Социальная ответственность</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Партнёрам</a></li>
+								<li><a href="#">Партнёры</a></li>
+								<li><a href="#">Как стать партнёров?</a></li>
+							</ul>
+						</div>
+						<div class="cell-3 shift-1 phone">
+							<div>
+								<a href="tel:8465150-03-03">8 495 150-03-03</a>
+							</div>
+							<div>
+								<a href="#" class="get-callback"><i class="icons-menu-callback"></i><span>Обратный звонок</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid adress-place">
+						<div class="cell-3">
+							Наши клиники:
+						</div>
+						<a href="#" class="cell-3 adress">
+							<div>ВЕРАМЕД Звенигород</div>
+							<div>г. Звенигород, ул. Московская, 12</div>
+						</a>
+						<a href="#" class="cell-3 adress">
+							<div>ВЕРАМЕД Премиум</div>
+							<div>г. Одинцово, ул. Говорова, 18/1</div>
+						</a>
+						<a href="#" class="cell-3 adress">
+							<div>ВЕРАМЕД Одинцово</div>
+							<div>г. Одинцово, бул. Любы Новоселовой, 17</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="level-2">
+				<div class="container">
+					<div class="grid">
+						<div class="cell-3 copy">
+							<a href="/"><i class="icons-footer-logo"></i></a>
+							<span>Copyright 2009-2016</span>
+						</div>
+						<div class="cell-9 info">Имеются противопоказания, необходима консультация специалиста</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
